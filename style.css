@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
-
+body{
+    background: #222222 !important;
+    min-height: 100vh;
+}
 .poppins{
     font-family: 'Poppins', sans-serif;
 }
@@ -26,8 +29,20 @@
     transition: 0.4s;
 }
 .btn-info{
-    background-color: rgb(103, 68, 255) !important;
+    background-color: rgb(0, 0, 0) !important;
     color: aliceblue !important;
-    border: none;
-    box-shadow: 0px 5px 25px rgba(93, 24, 255, 0.747);
+    border: 2px solid #3246ff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 10px 10px -8px rgba(8, 7, 7, 0.78);
+}
+.btn-info:hover{
+    background-color:#3246ff !important;
+    transition: 0.4s;
+}
+.white{
+    color: white!important;
+}
+a{
+    text-decoration: none !important;
 }
