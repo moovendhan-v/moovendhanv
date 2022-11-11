@@ -70,5 +70,22 @@ a{
 
 .border-top-footer{
     border-top: 2px solid rgb(73, 73, 255);
-
+}
+.border-bottom{
+    border-bottom: 2px solid rgb(73, 73, 255);
+}
+.width-40{
+    width: 40%;
+}
+.width-50{
+    width: 50%;
+}
+.width-60{
+    width: 60%;
+}
+.width-70{
+    width: 70%;
+}
+.width-80{
+    width: 80%;
 }
