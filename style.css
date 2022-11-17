@@ -121,6 +121,9 @@ a{
         border: 2px solid blue;
         margin: auto;
       }
+      .font-responcive{
+        font-size: 25px !important;
+      }
   }
 
 
