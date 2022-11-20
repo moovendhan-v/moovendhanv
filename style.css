@@ -141,11 +141,38 @@ a{
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
   }
-  @media only screen and (max-width: 768px) {
+  .drive{
+    position: relative;
+    padding-bottom: 50.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  }
+  .drive iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.active{
+    color: #3246ff !important;
+}
+.border-bot-2{
+    border-bottom: 2px solid rgb(0, 60, 255);
+    margin-left: 200px !important;
+    margin-top: 30px !important;
+    margin-right: 200px !important;
+    /* border-left: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255); */
+}
+  @media only screen and (max-width: 768px) { 
+    /* mobile */
     .youtube {
         position: relative;
         width: 100%;
-      overflow: hidden;
+        overflow: hidden;
         padding-top: 50%;
         border: 2px solid blue;
         margin: auto;
@@ -153,6 +180,19 @@ a{
       .font-responcive{
         font-size: 25px !important;
       }
+      .border-bot-2{
+        border-bottom: 2px solid rgb(0, 60, 255);
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
   }
+
+  @media only screen and (max-width: 992px) {
+    .border-bot-2{
+        border-bottom: 2px solid rgb(0, 60, 255);
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+      }
+    }
 
 
