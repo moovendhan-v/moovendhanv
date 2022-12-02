@@ -61,6 +61,10 @@ a{
     width:50px;
     height: 50px;
 }
+.social-logo-about img{
+    width:30px;
+    height: 30px;
+}
 .social-logo-large img{
     max-width:38px ;
 }
@@ -98,7 +102,25 @@ a{
     border: 2px solid blue;
     margin: auto;
   }
-  
+  .yt-bd{
+    border: 2px solid blue ;
+  }
+  .yt-bg{
+    background: linear-gradient(90deg, rgba(76, 127, 255, 0.733) 0%, rgba(240, 151, 254, 0.596) 47%, rgba(0, 213, 255, 0.514) 100%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .yt-subscribe{
+    background-color: rgba(250, 0, 0, 0.616);
+    padding:2px 5px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px !important;
+  }
+  .yt-subscribe:hover{
+    color: white;
+  }
   .responsive-youtube {
     position: absolute;
     top: 0;
