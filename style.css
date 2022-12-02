@@ -103,16 +103,17 @@ a{
     margin: auto;
   }
   .yt-bd{
-    border: 2px solid blue ;
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+    box-shadow: 10px 12px 20px -5px rgba(7, 7, 8, 0.78);
   }
   .yt-bg{
-    background: linear-gradient(90deg, rgba(76, 127, 255, 0.733) 0%, rgba(240, 151, 254, 0.596) 47%, rgba(0, 213, 255, 0.514) 100%);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
   .yt-subscribe{
     background-color: rgba(250, 0, 0, 0.616);
-    padding:2px 5px;
+    padding:2px 5px !important;
     font-size: 14px;
     color: white;
     border-radius: 5px;
@@ -189,7 +190,7 @@ a{
     border-top: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255); */
 }
-  @media only screen and (max-width: 768px) { 
+  @media only screen and (max-width: 768px) {
     /* mobile */
     .youtube {
         position: relative;
