@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube API</title>
+</head>
+<body>
+    YouTube Subscribers
+    <div id="subcounts"></div>
+
+    YouTube Video Views
+    <div id="viewCount"></div>
+
+    YouTube Video Count
+    <div id="videoCount"></div>
+
+    <script>
+const APIKey = 'AIzaSyDbEgadnqHQCSVitn2tsnQsY1HXsfsS0dM';
+const Userid = 'UCdrrGvlDqvXo4H0aH8Rh8wQ';
+const subscriberCount= document.getElementById('subcounts');
+const viewCount = document.getElementById('viewCount');
+const videoCount = document.getElementById('videoCount');
+let getdata = () => {
+    fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${Userid}&key=${APIKey}`)
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        console.log(data);
+        let sub = subscriberCount.innerHTML = data["items"][0].statistics.subscriberCount;
+        console.log(sub);
+        viewCount.innerHTML = data["items"][0].statistics.viewCount;
+        videoCount.innerHTML = data["items"][0].statistics.videoCount;
+    })
+}
+getdata();
+    </script>
+</body>
+</html>
