@@ -1,5 +1,5 @@
 
-const APIKey = '';
+const APIKey = 'AIzaSyDbEgadnqHQCSVitn2tsnQsY1HXsfsS0dM';
 const Userid = 'UCSjSmjY9cEI_ib-NrBElVXw';
 const subscriberCount= document.getElementById('subscriberCount');
 const viewCount = document.getElementById('viewCount');
