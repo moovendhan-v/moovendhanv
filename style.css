@@ -57,6 +57,7 @@ body{
 a{
     text-decoration: none !important;
 }
+
 .social-logo img{
     width:50px;
     height: 50px;
@@ -106,6 +107,10 @@ a{
     border: 2px solid rgb(255, 255, 255) ;
     border-radius: 5px;
     box-shadow: 10px 12px 20px -5px rgba(7, 7, 8, 0.78);
+  }
+  .yt-about-bd{
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
   }
   .yt-bg{
     border-top-right-radius: 10px;
@@ -190,6 +195,20 @@ a{
     border-top: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255); */
 }
+.about-us{
+  background-color: #0000007c;
+  border-left: 3px solid rgb(130, 246, 250);
+}
+.about-us-r{
+  background-color: #0000007c;
+  border-left: 0px solid rgb(130, 246, 250);
+  border-right: 3px solid rgb(130, 246, 250) !important;
+}
+.about-chirld{
+  text-align: center !important;
+  justify-content: center !important;
+  padding: 110px 10px;
+}
   @media only screen and (max-width: 768px) {
     /* mobile */
     .youtube {
@@ -208,6 +227,9 @@ a{
         margin-left: 10px !important;
         margin-right: 10px !important;
       }
+      .about-us{
+        height: 100% !important;
+      }
   }
 
   @media only screen and (max-width: 992px) {
@@ -215,6 +237,27 @@ a{
         border-bottom: 2px solid rgb(0, 60, 255);
         margin-left: 10px !important;
         margin-right: 10px !important;
+      }
+      .about-chirld{
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 10px 10px;
+      }
+      .about-us{
+        border-left: 0px solid rgb(130, 246, 250);
+        border-bottom: 3px solid rgb(130, 246, 250);
+      }
+      .about-us{
+        background-color: #000000;
+        height: 100% !important;
+      }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .about-us{
+        background-color: #000000;
+        height: 290px;
       }
     }
 
