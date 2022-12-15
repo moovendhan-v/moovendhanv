@@ -204,6 +204,7 @@ a{
   border-left: 0px solid rgb(130, 246, 250);
   border-right: 3px solid rgb(130, 246, 250) !important;
 }
+
 .about-chirld{
   text-align: center !important;
   justify-content: center !important;
@@ -246,6 +247,11 @@ a{
       .about-us{
         border-left: 0px solid rgb(130, 246, 250);
         border-bottom: 3px solid rgb(130, 246, 250);
+      }
+      .about-us-r{
+        background-color: #0000007c;
+        border-left: 0px solid rgb(130, 246, 250);
+        border-right: 0px solid rgb(130, 246, 250) !important;
       }
       .about-us{
         background-color: #000000;
