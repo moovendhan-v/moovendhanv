@@ -231,6 +231,12 @@ a{
       .about-us{
         height: 100% !important;
       }
+      .yt-bg{
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+      }     
+
+
   }
 
   @media only screen and (max-width: 992px) {
