@@ -10,23 +10,53 @@
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
 </head>
-<body>
-<div class="container about-us  mt-3 poppins rounded">
-  <div class="row">
-    <div class="col-lg-6 about-chirld">
-      <h3 class="white" style="font-size: 32px; color: aqua !important;">Hire me<br><span style="font-size:25px" class="white">as a video editor</span> </h3>
-    </div>
-    <div class="col-lg-6 about-yt p-3 about-chirld">
-      <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto">
-        <iframe src="https://www.youtube.com/embed/oHAX4E3hpC4?rel=0" title="YouTube video" allowfullscreen></iframe>
+<body><!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#web-developer">
+    Launch static backdrop modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="web-developer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content" style="background-color: #89a6ff;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 white" id="staticBackdropLabel">My Projects</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center" >
+            <div class="col-sm-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
+              <a href="https://github.com/agricreation/moovendhanv.git">
+              <h4 class="white poppins mb-2 h6">My personal website</h4>
+              <img class="img-fluid rounded" src="assets/img/moovendhan.png" alt="">
+            </a>
+            </div>
+            <div class="col-sm-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
+              <a href="https://git.selfmade.ninja/moovendhan/photogram-agri.git">
+              <h4 class="white poppins mb-2 h6">Photogram (Github)</h4>
+              <img class="img-fluid rounded" src="assets/img/moovendhan.png" alt="">
+            </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">Subscribe <span id="subscriberCount" >live sub count</span></button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-        <!---Javascript files-->
-        <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="sidebars.js"></script>
-        <script src="assets/dist/js/script.js"></script>
+  
+
+  <!-- Modal gallery -->
+    <!---Javascript files-->
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sidebars.js"></script>
+    <script src="assets/dist/js/script.js"></script>
+    <script src="api/ytapi.js"></script>
+    <script src="api/ytapi.bestappsintamil.js"></script>
+    
 
 </body>
 </html>

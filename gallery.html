@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moovendhan v</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
+
+</head>
+<body>
+ <!-- Messenger Chat plugin Code -->
+ <div id="fb-root"></div>
+
+ <!-- Your Chat plugin code -->
+ <div id="fb-customer-chat" class="fb-customerchat">
+ </div>
+
+ <script>
+   var chatbox = document.getElementById('fb-customer-chat');
+   chatbox.setAttribute("page_id", "102433722703624");
+   chatbox.setAttribute("attribution", "biz_inbox");
+ </script>
+
+ <!-- Your SDK code -->
+ <script>
+   window.fbAsyncInit = function() {
+     FB.init({
+       xfbml            : true,
+       version          : 'v15.0'
+     });
+   };
+
+   (function(d, s, id) {
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) return;
+     js = d.createElement(s); js.id = id;
+     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+ </script>
+    <!--Navbars-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png"alt="Moovendhan"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active font-black fs-5" aria-current="page" href="index.html">Moovendhan</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link font-black fs-5" aria-current="page" href="aboutus.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Refrence</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Myself gallery</a>
+            </li>
+            <!--drop down menu here-->
+            <li class="nav-item dropdown font-black fs-5">
+              <a class="nav-link dropdown-toggle font-black fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link font-black fs-5 dropdown-items" aria-current="page" href="https://drive.google.com/file/d/1PnrYZZRw-UshNr9JPRcUGoEtP67rKyBf/view?usp=sharing" target="_blank">Resume🗃️</a></li>
+                <li><a class="dropdown-item font-black" href="mailto:agricreationofficial@protonmail.com">Mail to</a></li>
+                <li><a class="dropdown-item font-black" href="videos.html">Videos here</a></li>
+              </ul>
+            </li>
+    
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!---Gallery-->
+       <!---Footer-->
+       <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Agricreations, All right recived</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="mailto:agricreationofficial@proton.me" class="nav-link px-2 text-muted">Contact us</a></li>
+          </ul>
+        </footer>
+      </div>
+      
+      <!---whats appp contact-->
+        <!-- <div class="floating-whatsapp">
+          <img src="assets/img/whatsapp.png" alt="">
+        </div> -->
+      
+          <!---Javascript files-->
+          <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="sidebars.js"></script>
+          <script src="assets/dist/js/script.js"></script>
+          
+      </body>
+      </html>

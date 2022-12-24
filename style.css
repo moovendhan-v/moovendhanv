@@ -103,6 +103,10 @@ a{
     border: 2px solid blue;
     margin: auto;
   }
+  .yt-model{
+    border: 2px solid rgb(255, 255, 255) ;
+    border-radius: 5px;
+  }
   .yt-bd{
     border: 2px solid rgb(255, 255, 255) ;
     border-radius: 5px;
@@ -209,6 +213,16 @@ a{
   text-align: center !important;
   justify-content: center !important;
   padding: 110px 10px;
+}
+.modal.fade.show {
+  backdrop-filter: blur(5px);
+}
+body.modal-open .supreme-container{
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
   @media only screen and (max-width: 768px) {
     /* mobile */
