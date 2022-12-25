@@ -224,6 +224,10 @@ body.modal-open .supreme-container{
   -ms-filter: blur(1px);
   filter: blur(1px);
 }
+.yt-logo-aboutus{
+  width: 20% !important; 
+  height: 20% !important;
+}
   @media only screen and (max-width: 768px) {
     /* mobile */
     .youtube {
