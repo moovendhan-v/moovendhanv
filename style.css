@@ -228,6 +228,13 @@ body.modal-open .supreme-container{
   width: 20% !important; 
   height: 20% !important;
 }
+.loading{
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  align-items: center;
+  opacity: 50%;
+}
   @media only screen and (max-width: 768px) {
     /* mobile */
     .youtube {
