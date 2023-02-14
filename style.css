@@ -243,6 +243,12 @@ border-radius: 50px !important;
 }
   @media only screen and (max-width: 768px) {
     /* mobile */
+    .card-text1{
+      font-size: 10vh !important;
+    }
+    .card-text2{
+      font-size: 2.5vh !important;
+    }
     .youtube {
         position: relative;
         width: 100%;
