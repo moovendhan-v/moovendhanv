@@ -28,6 +28,86 @@
   </style>
 </head>
 
+<style>
+  .poppins-h{
+      font-family: poppins;
+      font-size:25px !important;
+  }
+  .poppins-p{
+      font-family: poppins;
+      font-size: 12px;
+      font-weight: 100;
+  }
+  .progress{
+    --bs-progress-height: 0.5rem !important;
+  }
+  .skill-content{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 600 !important;
+  }
+  .skill-content-num{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 100 !important;
+  }
+  .mb-10{margin-bottom: 10px !important;}
+  .progress{
+    border:2px solid rgb(51, 51, 51);
+    --bs-progress-bg:none !important;
+    margin-bottom: 13px;
+    /* padding: 0.5px !important; */
+  }
+  .progress-bar{
+    border-radius: 50px;
+  }
+  .skill-heading{
+    margin-top: 30px;
+  }
+  .border-bottom{
+    border-bottom: 3px solid rgb(95, 95, 95) !important;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .progressbar{
+      background-color: none !important;
+  }
+  .progressbar-web{
+      background-color: var(--bs-progress-bar-bg);
+  }
+  .progressbar-programming{
+      background-color: #6f0dfd !important;
+  }
+  .progress-database{
+      background-color: #00ccff !important;
+  }
+  .progress-uiux{
+      background-color: #ec56fa !important;
+  }
+  .what-i-do{
+      background-color: #0000003a;
+      transition: 1s;
+  border: 2px solid #3246ff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 10px 10px -8px rgba(8, 7, 7, 0.78);
+  }
+  /* .blur{
+      background-color: #0044ff1f;
+      filter: blur(8px);
+-webkit-filter: blur(8px);
+
+  } */
+
+</style>
+
 <body>
   <!-- Messenger Chat plugin Code -->
   <div id="fb-root"></div>
@@ -110,306 +190,221 @@
       </div>
     </div>
   </nav>
-  <!-- Models for all branches  -->
-  <div class="modal fade " id="all-branches" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content" style="background-color: #89a6ff;">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 white" id="staticBackdropLabel"><i class="fa-duotone fa-browser"></i> Our Products</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Line  -->
-        <div class="text-center text-primary">Websites</div>
-        <div class="modal-body ">
-          <div class="row text-center" >
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.bestappsintamil.in/" target="_blank">
-                <h4 class="white poppins mb-2 h6">Best apps in tamil</h4>
-                <img class="img-fluid rounded" src="assets/img/products/bestappsintamil blog agricreations.png" alt="bestappsintamil blog agricreations">
-              </a>
-            </div>
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://techeyguys.agricreations.com/" target="_blank">
-                <h4 class="white poppins mb-2 h6">Techey guys</h4>
-                <img class="img-fluid rounded" src="assets/img/products/Techeyguys blogs agricreations.png" alt="techeyguys blog agricreations">
-              </a>
-            </div>
-          </div>
-        </div>
-<!-- line two  -->
-<div class="text-center text-danger">Youtube</div>
-        <div class="modal-body ">
-          <div class="row text-center" >
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.youtube.com/@bestappsintamil" target="_blank">
-                <h4 class="white poppins mb-2 h6">@bestappsintamil</h4>
-                <img class="img-fluid rounded" src="assets/img/products/bestappsintamil youtube.png" alt="bestappsintamil blog agricreations">
-              </a>
-            </div>
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.youtube.com/@HkragritechsYt" target="_blank">
-                <h4 class="white poppins mb-2 h6">@hkragritechsYt</h4>
-                <img class="img-fluid rounded" src="assets/img/products/hkragrtechs youtube.png" alt="techeyguys blog agricreations">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="mt-2 mb-2b text-center bg-danger">
-          <button style="padding-right: 9rem !important;
-          padding-left: 9rem !important;" type="button" class="btn btn-danger text-center" data-bs-dismiss="modal"><i class="fa-sharp fa-solid fa-heart-crack"></i>  Close</button>
-        
-        <!-- <a href="https://github.com/agricreation" target="_blank">
-          <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">visit github</button>
-        </a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!--About us-->
 <div class="container">
-<div class="col-lg-12  p-4 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-    <a type="button" class="" data-bs-toggle="modal" data-bs-target="#web-developer">
-      <img id="#web-developer" src="assets/img/logo.png" width="50" height="45" class="me-2" viewBox="0 0 118 94" role="img"><title>About us</title>
-      <span class="fs-4 white" id="#web-developer">Moovendhan v 🗃️<span id="#web-developer" class="white text-primary h6">&nbsp;&nbsp;(Web developer)</span></span>
-    </a>
-    <div class="modal fade " id="web-developer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content" style="background-color: #89a6ff;">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 white" id="staticBackdropLabel">My Projects</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body ">
-            <div class="row text-center" >
-              <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                <a href="https://github.com/agricreation/moovendhanv.git" target="_blank">
-                <h4 class="white poppins mb-2 h6">My personal website</h4>
-                <img class="img-fluid rounded" src="assets/img/moovendhan.png" alt="moovendhan website">
-              </a>
-              </div>
-              <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                <a href="https://git.selfmade.ninja/moovendhan/photogram-agri.git" target="_blank">
-                <h4 class="white poppins mb-2 h6">Photogram (Github)</h4>
-                <img class="img-fluid rounded" src="assets/img/photogram.png" alt="photogram moovendhan">
-              </a>
-              </div>
-  
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <a href="https://git.selfmade.ninja/moovendhan" target="_blank">
-            <button type="button" class="btn poppins white" style="background-color: rgba(255, 175, 3, 0.836);">sna gitlab</button>
-          </a>
-          <a href="https://github.com/agricreation" target="_blank">
-            <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">visit github</button>
-          </a>
-          </div>
-        </div>
+<!--About us-->
+<div class="blur"></div>
+<div class="row what-i-do mt-3">
+  <div class="col-lg-6">
+      <div class="row">
+      <div class="col-md-2 white">
+          <span style="font-size: 3em; color: Dodgerblue;">
+              <i class="fa-solid fa-video"></i>
+            </span>
       </div>
-    </div>
-  </header>
-  <a href="https://www.youtube.com/watch?v=yHQ074PUeHQ" target="_blank">
-  <div class="container about-us about-us-r mt-3 poppins rounded">
-    <div class="row">
-      <div class="col-lg-6 about-yt p-3 about-chirld">
-        <div class="ratio ratio-16x9 yt-about-bd text-center" width="100%" height="auto">
-         <img src="assets/img/moovendhan-aasc.png" alt="moovendhan-aasc">
-           <img src="assets/img/svg/youtube.svg" alt="moovendhan-aasc" style="width: 20% !important; height: 20% !important; margin: auto !important;" class="yt-logo-aboutus">
-        </div>
+      <div class="col-md-10 white">
+          <h3 class="poppins-h">Video editor</h3>
+          <p class="poppins-p">Hi this is agri, i will do a professional vidoes for your youtube channel. i have more than 2years of experience in this field. i will do a travel, wedding, educational and so on. kindly contact me before your order....</p>
       </div>
-      <div class="col-lg-6 about-chirld cards-01">
-        <h3 class="white card-text1" style=" color: aqua !important;">Achariya College Event<br><span  class="white card-text2">Tech guru 2021</span> </h3>
-      </div>
-    </div>
   </div>
-</a>
-  <div class="container about-us mt-3 poppins rounded">
-    <div class="row">
-      <div class="col-lg-6 about-chirld cards-01">
-        <h3 class="white card-text1" style="color: aqua !important;">Hire me<br><span class="white card-text2">as a video editor</span> </h3>
-      </div>
-      <div class="col-lg-6 about-yt p-3 about-chirld">
-        <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto">
-          <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
   </div>
-  <main>
-    <h1 class="white poppins mt-4 h1">About me as a Video editor 🎥</h1>
-    <p class="fs-5 col-md-12 white">Hi this is agri, i will do a professional vidoes for your youtube channel. i have more than 2years of experience in this field. i will do a travel, wedding, educational and so on. kindly contact me before your order....</p>
-    <div class="mb-3 mt-5">
-      <a href="https://youtu.be/uGuJbpWsL6k" style="padding: 10px 40px;" class="btn-info btn-lg mt-3" target="_blank">Short flim</a>
-      <a href="https://www.fiverr.com/share/eLxrg4" style="padding: 10px 40px;" class="btn-info btn-lg mt-3">Hire Me -> 📲</a>
-    </div>
-
-
-    <hr class="col-3 col-md-2 mb-5">
-
-    <div class="row g-5">
-      <div class="col-md-6">
-        <div class="border-bottom">
-          <h2 class="white ">Education</h2>
-        </div>
-        <div class="">
-          <p class="white">Education history</p>
-        </div>
-        <!-- <p class="white ">Scooling to college</p> -->
-        <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Bharathi english high school 00-2011</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Bone nehuru higher secondary school 2011-2012</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Deepa oli govt aided hight school 2012-2015</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">jeevanantham govt boys hr sec school 2015-2017 </a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Achariya arts and science college (BCA) 2019-2022 </a></li>
-          <li class="text-muted d-flex align-items-start mb-1 white">Studing web engineering in <span>  <a href="https://sibidharan.me/">SNA@sibitharan</a> </span>  (Pursuing!)</li>
-        </ul>
-        <p class="white border-bottom">Skills</p>
-        <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Web development > 50%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">video editing > 70%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">blogging > 20% </a></li>
-        </ul>
-        <p class="white border-bottom">Programming Skills</p>
-        <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">HTML - CSS > 50%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Javascript > 40%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Bootstrap framework > 40%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">python > 20% </a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">php > 20% </a></li>
-        </ul>
-        <p class="white border-bottom">Software Known</p>
-        <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">photoshop > 70%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Premier pro > 80%</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Adobe illuslator > 20% </a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Adobe xd > 20% </a></li>
-        </ul>
-        <p class="white border-bottom">Games</p>
-        <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1 white"><a href="#" rel="noopener" target="_blank">Love to play chess (Matches played in puducherry school level)</a></li>
-
-        </ul>
+  <div class="col-lg-6">
+      <div class="row">
+      <div class="col-md-2 white">
+          <span style="font-size: 3em; color: Dodgerblue;">
+              <i class="fa-solid fa-terminal"></i>
+            </span>
       </div>
-
-      <div class="col-md-6">
-        <div class="border-bottom">
-          <h2 class="white">About us</h2>
-        </div>
-
-        <p class="white">Here it will help you to reach me out quickly</p>
-        <ul class="icon-list ps-0">
-          <div class="border-bottom width-80 mb-2">
-            <h6 class="white">Blogs</h6>
-          </div>
-          <div class="mb-4">
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.bestappsintamil.in/">bestappsintamil</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://bestintrestingapps.bestappsintamil.in/">bestintrestingapps 📲  (decripted-> under construction) </a></li>
-          <li class="text-muted d-flex align-items-start mb-1 white" id="upcomming"> <span><a href="https://techeyguys.agricreations.com">Techeyguys (comming soon) </a></span> </li>
-        </div>
-          <div class="border-bottom width-70 mb-2">
-            <a href="https://www.youtube.com/c/HkragritechsYt" class="social-logo-about">
-              <img src="assets/img/svg/youtube.svg" alt="">
-              <h6 class="white">Youtube</h6>
-            </a>
-          </div>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.youtube.com/channel/UCdrrGvlDqvXo4H0aH8Rh8wQ">@hkragritechsyt (All about tech)<span class="align-items-center justify-content-center"><a href="https://www.youtube.com/hkragritechsyt/list25?sub_confirmation=1" class="yt-subscribe poppins " target="_blank"><span id="subscriberCount" ></span></a></span></a>
-          </li>
-
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.youtube.com/channel/UCdrrGvlDqvXo4H0aH8Rh8wQ">@bestappsintamil (Intresting apps)<span class="align-items-center justify-content-center"><a href="https://www.youtube.com/channel/UCdrrGvlDqvXo4H0aH8Rh8wQsub_confirmation=1" class="yt-subscribe poppins " target="_blank"><span id="subcounts" ></span></a></span></a>
-          </li>
-
-          <li class="d-flex align-items-start mb-3 white"><a href="https://www.youtube.com/channel/UC2s_PCBZH9HVY6ZNP8wMyVA">Mragrigamer (Gaming)</a></li>
-          <div class="border-bottom width-60 mb-2">
-            <a href="https://www.instagram.com/moovendhan_agriculture/" class="social-logo-about">
-              <img src="assets/img/svg/instagram.svg" alt="">
-              <h6 class="white">Instagram</h6>
-            </a>
-          </div>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.instagram.com/techeyguys/">Techeyguys</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.instagram.com/hkragritechs/?hl=en">Hkr agri techs</a></li>
-          <li class="d-flex align-items-start mb-3 white"><a href="https://www.instagram.com/moovendhan_agriculture/">Moovendhan (Presonal)</a></li>
-        </ul>
-          <div class="border-bottom width-50 mb-2 d-flex just">
-            <a href="https://www.facebook.com/moovendhan.agriculture/" class="social-logo-about">
-              <img src="assets/img/svg/facebook.svg" alt="">
-              <h6 class="white">facebook</h6>
-            </a>
-          </div>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://m.facebook.com/people/Techeyguys/100086339389476/">Techeyguys</a></li>
-          <li class="d-flex align-items-start mb-1 white"><a href="https://www.facebook.com/bestappsintamil/">Best apps in tamil</a></li>
-          <li class="d-flex align-items-start mb-3 white"><a href="https://www.facebook.com/moovendhan.agriculture/">Moovendhan (Presonal)</a></li>
-        </ul>
-          <div class="border-bottom width-40 mb-2">
-            <h6 class="white">Personal touch</h6>
-          </div>
-       <a href="https://git.selfmade.ninja/moovendhan" class="social-logo">
-         <img src="assets/img/svg/github.svg" alt="">
-       </a>
-       <a href="https://www.instagram.com/moovendhan_agriculture/" class="social-logo">
-         <img src="assets/img/svg/instagram.svg" alt="">
-       </a>
-
-       <a href="https://www.facebook.com/moovendhan.agriculture/" class="social-logo">
-         <img src="assets/img/svg/facebook.svg" alt="">
-       </a>
-       </a>
-       <a href="https://www.youtube.com/channel/UC79ikm9mQLz_I53CKOBeXKA" class="social-logo">
-         <img src="assets/img/svg/youtube.svg" alt="">
-       </a>
-       <a href="https://www.linkedin.com/in/moovendhanv" class="social-logo">
-         <img src="assets/img/svg/linkedin.svg" alt="">
-       </a>
-        </ul>
+      <div class="col-md-10 white">
+          <h3 class="poppins-h">Web Developer</h3>
+          <p class="poppins-p">Looking to gain a piece of knowledge about the Web
+              development position at Crown Company that can benefit from
+              huge creative knowledge, design skills, and web engineering</p>
       </div>
-    </div>
-  </main>
-
-  <div class="container about-us about-us-r mt-3 poppins rounded">
-    <div class="row">
-      <div class="col-lg-6 about-yt p-3 about-chirld">
-        <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto">
-          <iframe src="https://www.youtube.com/embed/ba9yMoR-FZ8?rel=0" title="YouTube video" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-6 about-chirld">
-        <h3 class="white card-text1" style=" color: aqua !important;">Techeyguys (working)<br><span  class="white card-text2">about technology</span> </h3>
-      </div>
-    </div>
+  </div>
   </div>
 </div>
-
-
-<!---Youtube videos using iframe-->
-
-
-<!-- <div class="b-example-divider"></div>
-
-<div class="px-4 pt-1 my-1 text-center">
-  <h1 class="display-4 fw-bold white font-responcive">Techeyguys - Upcomming</h1>
-  <div class="col-lg-6 mx-auto">
-    <p class="lead mb-4 white">Our upcomming blog. <a href="#upcomming">Techeyguys</a> / We are still working</p>
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-      <div class="mb-3 mt-5">
-        <a href="https://techeyguys.blogspot.com/2022/11/firefox%20focus.html" style="padding: 10px 40px;" class="btn-info btn-lg mt-3">Show blog -></a>
+<!--Skills-->    
+<!--First row-->
+  <div class="row">
+    <div class="col-sm-6">
+      <!--01-->
+      <p class="white skill-heading poppins border-bottom h4 mb-4">Web development</p>
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Html and css</h6>
+        <div class=" white skill-content-num">80%</div>
       </div>
+      <div class="progress" role="progressbar progressbar-web" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 80%"></div>
+      </div> 
+      
+      <!---02-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Javascript</h6>
+        <div class=" white skill-content-num">40%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-web" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 40%"></div>
+      </div> 
+
+      <!--03-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Php</h6>
+        <div class=" white skill-content-num">70%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-web" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 70%"></div>
+      </div> 
+
+      <!--04-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Mysql</h6>
+        <div class=" white skill-content-num">70%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-web" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 70%"></div>
+      </div> 
+<!--First Colend-->
     </div>
+    
+    <div class="col-sm-6">
+      <!--01-->
+      <p class="white skill-heading poppins border-bottom h4 mb-4">Programming</p>
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">php</h6>
+        <div class=" white skill-content-num">70%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-programming" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progressbar-programming" style="width: 70%"></div>
+      </div> 
+      
+      <!---02-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Javascript</h6>
+        <div class=" white skill-content-num">40%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-programming" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progressbar-programming" style="width: 40%"></div>
+      </div> 
+
+      <!--03-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">Python</h6>
+        <div class=" white skill-content-num">20%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-programming" aria-label="Basic example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progressbar-programming" style="width: 20%"></div>
+      </div> 
+
+      <!--04-->
+      <div class=" d-flex skill-content ">
+        <h6 class="white skill-content">c</h6>
+        <div class=" white skill-content-num">30%</div>
+      </div>
+      <div class="progress" role="progressbar progressbar-programming" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progressbar-programming" style="width: 30%"></div>
+      </div> 
+<!--seconnd Colend-->
+    </div>
+    <!---Row end-->
   </div>
-  <div class="overflow-hidden" style="max-height: 30vh;">
- <div class="container px-5b youtube">
-      <iframe class="responsive-youtube" src="https://www.youtube.com/embed/ba9yMoR-FZ8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-  </div> -->
-  <!--
+
+<!--Second row-->
+  <div class="row">
+      <div class="col-sm-6">
+        <!--01-->
+        <p class="white skill-heading poppins border-bottom h4 mb-4">Database</p>
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">Mysql</h6>
+          <div class=" white skill-content-num">70%</div>
+        </div>
+        <div class="progress" role="progressbar " aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-database" style="width: 70%"></div>
+        </div> 
+        
+        <!---02-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">MongoDB</h6>
+          <div class=" white skill-content-num">10%</div>
+        </div>
+        <div class="progress" role="progressbar " aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-database" style="width: 10%"></div>
+        </div> 
+
+        <!--03-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">Redis</h6>
+          <div class=" white skill-content-num">10%</div>
+        </div>
+        <div class="progress" role="progressbar " aria-label="Basic example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-database" style="width: 10%"></div>
+        </div> 
+
+        <!--04-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">PostegreSQL</h6>
+          <div class=" white skill-content-num">5%</div>
+        </div>
+        <div class="progress" role="progressbar " aria-label="Basic example" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-database" style="width: 5%"></div>
+        </div> 
+<!--First Colend-->
+      </div>
+      
+      <div class="col-sm-6">
+        <!--01-->
+        <p class="white skill-heading poppins border-bottom h4 mb-4">Adobe</p>
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">Photoshop</h6>
+          <div class=" white skill-content-num">70%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-uiux" style="width: 70%"></div>
+        </div> 
+        
+        <!---02-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">AdobeXD</h6>
+          <div class=" white skill-content-num">40%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-uiux" style="width: 40%"></div>
+        </div> 
+
+        <!--03-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">Premierpro</h6>
+          <div class=" white skill-content-num">80%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-uiux" style="width: 80%"></div>
+        </div> 
+
+        <!--04-->
+        <div class=" d-flex skill-content ">
+          <h6 class="white skill-content">After effects</h6>
+          <div class=" white skill-content-num">30%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-uiux" style="width: 30%"></div>
+        </div> 
+<!--seconnd Colend-->
+      </div>
+      <!---Row end-->
+    </div>
+
+  <!--Container end-->
 </div>
 
-<div class="youtube d-flex justify-content-center"> 
-  <iframe class="responsive-youtube" src="https://www.youtube.com/embed/ba9yMoR-FZ8?loop=1" title="YouTube video player"></iframe>
-</div>
+<!-- Modal gallery -->
+  <!---Javascript files-->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="sidebars.js"></script>
+  <script src="assets/dist/js/script.js"></script>
+  <script src="api/ytapi.js"></script>
+  <script src="api/ytapi.bestappsintamil.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
-</div> -->
-
+</body>
     <!---Footer-->
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
