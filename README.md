@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 =======
-# portfolio website 🗃️
+# Portfolio website 🗃️
 ## This project is created using the `bootstrap` framework
 
 You can clone this project using git clone `https://github.com/agricreation/moovendhanv.git`
@@ -12,4 +11,4 @@ Visit live site click here 📲 https://agricreation.github.io/moovendhanv
 
 👇👇👇
 ![github moovendhan portfolio](https://user-images.githubusercontent.com/96030910/214090870-1d3d5bf0-0277-4fcf-9003-6f07a827f745.png)
->>>>>>> e0d84a14f71a6c2dc1e0eb211d9205f698c589f1
+
