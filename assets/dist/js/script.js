@@ -7,6 +7,6 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=U
     console.log(data);
     let videos = data.items;
     for(video of videos){
-        console.log(video.snippet.title);
+        // console.log(video.snippet.publishTime);
     }
 })
