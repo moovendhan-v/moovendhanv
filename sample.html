@@ -1,30 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Timeout with Live Timer</title>
+  </head>
+  <body>
+    <h1 id="message">Click the button to start the timer!</h1>
+    <button id="start">Start Timer</button>
+    <p id="timer"></p>
 
-        <center>
-        <span id="countdown">You have to wait 40 seconds</span></center>
-        <br />
-        <div style="text-align: center;">
-        <b>download app after timer</b><br />
-        <a href="https://play.google.com/store/apps/details?id=com.guibais.whatsauto" id="download_link" onclick="window.location.href=('https://play.google.com/store/apps/details?id=com.guibais.whatsauto);" style="display: none;" target="_blank">
-        <button class="button button:active">download</button></a>
-        
-        <noscript>JavaScript needs to be enabled in order to be able to download.</noscript>
+    <script>
+      // Get our elements from the DOM
+      const message = document.getElementById("message");
+      const startBtn = document.getElementById("start");
+      const timerEl = document.getElementById("timer");
 
+      // Set the number of seconds for the timer
+      const timerLength = 5;
 
-        <script type="application/javascript">
-        (function(){
-           var count = 4;
-           var countdown_element = document.getElementById("countdown");
-           var download_link = document.getElementById("download_link");
-           var timer = setInterval(function(){
-              if (count) {
-                  countdown_element.innerHTML = "You have to wait %d seconds.".replace("%d", count);
-                  count--;
-              } else {
-                  clearInterval(timer);
-                  countdown_element.style.display = "none";
-                  download_link.style.display = "";
-              }
-           }, 1000);
-        })();
+      // Define the function that will run when the timer is finished
+      function timerFinished() {
+        message.innerText = "Timer finished!";
+        timerEl.innerText = "";
+      }
 
-        </script>
+      // Define the function that will update the timer every second
+      function updateTimer(timeLeft) {
+        console.log(timeLeft);
+        timerEl.innerText = `Time left: ${timeLeft} seconds`;
+
+        if (timeLeft <= 0) {
+          timerFinished();
+        } else {
+          // Recursively call this function every second until the timer has finished
+          setTimeout(() => updateTimer(timeLeft - 1), 1000);
+        }
+      }
+
+      // Add a click event listener to the button
+      startBtn.addEventListener("click", () => {
+        message.innerText = "Timer started!";
+        updateTimer(timerLength);
+      });
+    </script>
+  </body>
+</html>
