@@ -107,7 +107,12 @@
 -webkit-filter: blur(8px);
 
   } */
-
+.slugButton{
+  /* background-color: #2f00ff !important; */
+     color: white !important;
+  /* border: 2px solid rgba(26, 221, 0, 0.938) !important; */
+  cursor: pointer;
+}
 </style>
 
 <body>
@@ -176,8 +181,22 @@
       </div>
     </div>
   </nav>
-  <a href="https://projects.agricreations.com/" target="_blank" class="sticky-top"><p class="text-center bg-primary white poppins">Projects</p>
-  </a>
+
+  <div class="slugBg  bg-primary text-center sticky-top">
+     <select name="slug" class="text-success bg-primary slugButton" style="border: none;" id="slug" >
+                      <option value="projects" class="text-light">Projects ✅</option>
+                      <option value="email" class="text-light">Email</option>
+                      <option value="gmail" class="text-light">Gmail</option>
+                      <option value="resume" class="text-light">Resume</option>
+                      <option value="gitlab" class="text-light">Gitlab</option>
+                      <option value="github" class="text-light"></i>Github</option>
+                      <option value="linkedin" class="text-light">Linkedin</option>
+                      <option value="instagram" class="text-light">Instagram</option>
+                      <option value="youtube" class="text-light">Youtube</option>
+                      <option value="whatsapp" class="text-light">Whatsapp</option>
+                    </select>
+                    <a class="text-decoration-none text-center white poppins" target="_blank" href="#" id="submit"> <span class="" id="count">Redirect <i class="fa-solid fa-diamond-turn-right"></i></span></a> </p class="text-center">
+  </div>
 <div class="container">
 <!--About us-->
 <div class="blur"></div>
@@ -475,5 +494,12 @@
     <script src="api/ytapi.bestappsintamil.js"></script>
     <script src="api/ytapi.js"></script> -->
     <script src="script.js"></script>
+    <script>        submit.addEventListener('click',()=>{
+      let value = document.getElementById("slug");
+      let submit = document.getElementById("submit");
+      let redirect = `https://link.agricreations.com/${value.value}`;
+          submit.href = `${redirect}`;
+          location.reload;
+      });</script>
 </body>
 </html>
