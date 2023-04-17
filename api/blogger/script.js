@@ -4,7 +4,8 @@ let result = '15';
 var blog =
   `https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts?key=${apiKey}&maxResults=${result}`;
 
-fetch(blog)
+  document.addEventListener('DOMContentLoaded',()=>{
+    fetch(blog)
   .then((jsons) => jsons.json())
   .then((result) => {
     const results = result.items;
@@ -13,8 +14,16 @@ fetch(blog)
       img = posts.content;
       //Using regex we where filtering images 
       const regex = /(?:)(https?:\/\/[^\s"]+)/g;
+      // const youtubePattern = /https:\/\/www\.youtube\.com\/embed\//;
       const matches = img.match(regex);
-      console.log(matches[0]);
+      // const matchess = matches.match(youtubePattern);
+      // const filterMatch = matches[0] ;
+      // if ( matches.includes(matchess) ){
+      //   console.log("pattern found");
+      // }else{
+      //   console.log("pattern jnot found");
+      // }
+      // console.log(filterMatch);
       title = posts.title;
       published = posts.published;
       url = posts.url;
@@ -57,4 +66,8 @@ fetch(blog)
         container.appendChild(div1)
 
     });
+            const loadingSpinner = document.getElementById("LoadingSpinner");
+        loadingSpinner.classList.add('visually-hidden');
   });
+  })
+
