@@ -15,6 +15,9 @@
     href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <style>
+    #main{
+    transition: opacity 1s ease-in-out;
+  }
       @media only screen and (max-width: 768px) {
       /* mobile */
       .card-text1{
@@ -118,13 +121,19 @@
 <body>
   <!-- Messenger Chat plugin Code -->
   <div id="fb-root"></div>
-
+  <!-- Loading screen  -->
+  <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
   <!-- Your Chat plugin code -->
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
 
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f836b5db-df3d-4de8-8323-964e7e0090fc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   <!--Navbars-->
+  <div class="main fade visually-hidden" id="main">
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Moovendhan"></a>
@@ -459,15 +468,6 @@
       </div>
     </div>
   </div>
-<!-- Modal gallery -->
-  <!---Javascript files-->
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="sidebars.js"></script>
-  <script src="assets/dist/js/script.js"></script>
-  <script src="api/ytapi.js"></script>
-  <script src="api/ytapi.bestappsintamil.js"></script>
-
-</body>
     <!---Footer-->
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
@@ -484,19 +484,16 @@
 
         </ul>
       </footer>
-    </div>
-    
-    <!---whats appp contact-->
-  <!-- <div class="floating-whatsapp">
-    <img src="assets/img/whatsapp.png" alt="">
-  </div> -->
-    <!---Javascript files-->
-    <!-- <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="sidebars.js"></script>
-    <script src="assets/dist/js/script.js"></script>
-    <script src="api/ytapi.bestappsintamil.js"></script>
-    <script src="api/ytapi.js"></script> -->
-    <script src="script.js"></script>
+    </div>   
+  </div>
+    <!-- Modal gallery -->
+  <!---Javascript files--> <script src="script.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="sidebars.js"></script>
+  <script src="assets/dist/js/script.js"></script>
+  <script src="api/ytapi.js"></script>
+  <script src="api/ytapi.bestappsintamil.js"></script>
+
     <script>        submit.addEventListener('click',()=>{
       let value = document.getElementById("slug");
       let submit = document.getElementById("submit");

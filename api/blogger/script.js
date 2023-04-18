@@ -66,7 +66,7 @@ var blog =
         container.appendChild(div1)
 
     });
-            const loadingSpinner = document.getElementById("LoadingSpinner");
+         const loadingSpinner = document.getElementById("LoadingSpinner");
         loadingSpinner.classList.add('visually-hidden');
   });
   })

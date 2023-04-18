@@ -14,6 +14,11 @@
   <link rel="icon" type="image/x-icon"
     href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        #main{
+    transition: opacity 1s ease-in-out;
+  }
+    </style>
 </head>
 
 <body>
@@ -25,6 +30,13 @@
   </div>
 
   <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f836b5db-df3d-4de8-8323-964e7e0090fc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <!-- Loading screen  -->
+    <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+     </div> 
+     <div class="main fade visually-hidden" id="main">
   <!--Navbars-->
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -272,10 +284,7 @@
   </footer>
 </div>
 </div>
-<!---whats appp contact-->
-  <!-- <div class="floating-whatsapp">
-    <img src="assets/img/whatsapp.png" alt="">
-  </div> -->
+</div>
     <!---Javascript files-->
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="sidebars.js"></script>

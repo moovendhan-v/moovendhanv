@@ -27,18 +27,28 @@
       padding-bottom: 1px !important;
     }
   }
+  .hide{
+  display: none;
+  }
+  #main{
+    transition: opacity 1s ease-in-out;
+  }
 </style>
 </head>
 
 <body>
   <!-- Messenger Chat plugin Code -->
   <div id="fb-root"></div>
-
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
+  <!-- Loading screen  -->
+  <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+    <span class="visually-hidden">Loading...</span>
   </div>
-  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="f836b5db-df3d-4de8-8323-964e7e0090fc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-  <!--Navbars-->
+
+</div>
+ <!--Navbars-->
+
+ <div class="main fade visually-hidden" id="main">
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Moovendhan"></a>
@@ -390,6 +400,10 @@
   <!-- <div class="floating-whatsapp">
     <img src="assets/img/whatsapp.png" alt="">
   </div> -->
+
+  <!-- mainEnd  -->
+</div>
+
 
   <!---Javascript files-->
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
