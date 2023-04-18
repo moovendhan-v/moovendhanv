@@ -1,419 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="robots" content="index, follow">
-  <meta name="description" content="Myself : Moovendhan v(Agricreations), Webdeveloper, Blogger, Video editor, Youtuber">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moovendhan v</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon"
-    href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Bootstrap Image Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <style>
-    @media only screen and (max-width: 768px) {
-    /* mobile */
-    .card-text1{
-      font-size: 3vh !important;
-    }
-    .card-text2{
-      font-size: 2vh !important;
-    }
-    .cards-01{
-      padding-bottom: 1px !important;
-    }
-  }
-  .hide{
-  display: none;
-  }
-  #main{
-    transition: opacity 1s ease-in-out;
-  }
+.main{
+  cursor: pointer;
+}
+
 </style>
 </head>
-
 <body>
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
-  <!-- Loading screen  -->
-  <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
-  <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-    <span class="visually-hidden">Loading...</span>
+
+<!-- Gallery -->
+<div class="main">
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="https://blogger.googleusercontent.com/img/a/AVvXsEjGxNgvab03qqiCSwFbzVv9ETIzCOW41oIM7U4VHyrQIJi4hmQwih9Mr_GEPPQ51AJvgqWgAQk8hu6ujZMDFXtNdT2dNNcvyJY3wspvFBrh4NTMl6iWxKjAOifdCUyTCZb5F0fKxvfBan-K6mO9lAfVCF9cH8YfHqiMiWxoRlCFLw37H46HzsEjToPA4Q=w256-h320"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery shanchiediting"
+    />
+
+    <img
+      src="https://1.bp.blogspot.com/-SHOyHAnJSQk/XzPULsf4FQI/AAAAAAAABio/Vl05QVIUc8MOZfWaxWmDZqhGazTt3j29QCLcBGAsYHQ/s640/IMG_20200720_165415.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery godofwar"
+    />
   </div>
 
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://blogger.googleusercontent.com/img/a/AVvXsEiabOqWqzTxIX_Q28LC4mYioRbigQdKDysM2FDjTRvp4qMTnEW1zziQQVgjUNzI9vpquHjGjth2ZHB2o6ODSLXthbIIaaGvQqayUW_LD0CDh7iNLKEPieevnZIWLF9PzOU9KEbnAr1j9cxcSsFq_qRe_Ax_hJB2pN_mMOKguUChnvLITU9cEU7cCKcIRw=s16000"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery"
+    />
+
+    <img
+      src="https://lh3.googleusercontent.com/-cGOwoF6Trd8/YQoPYsoJkjI/AAAAAAAACJ8/mdMDGDQjeIwHEboT3R3i5NYzVR0MhkOhgCLcBGAsYHQ/24%2Bagri.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery birthday"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://lh3.googleusercontent.com/-N7KgnsELdKs/YQoPRfgh5DI/AAAAAAAACJ4/f3immAZBIqstEqIX_R8J3d_1fpCOcOvywCLcBGAsYHQ/fire%2Bin%2Bhand%2Bfinal%2Boutpput.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery fire"
+    />
+
+    <img
+      src="https://lh3.googleusercontent.com/-ta09F8aJub8/YQoPcEuNMTI/AAAAAAAACKE/6j0-KaiJjp4Que-_49P-uL_DAjgovEIUQCLcBGAsYHQ/moovendhan%2Bagriculture.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="moovendhan agricreations gallery "
+    />
+  </div>
 </div>
- <!--Navbars-->
-
- <div class="main fade visually-hidden" id="main">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Moovendhan"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active font-black fs-5" aria-current="page" href="index.html">Moovendhan</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link font-black fs-5" aria-current="page" href="aboutus.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Youtube</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link font-black fs-5" aria-current="page" href="blog.html">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a target="_blank" class="nav-link font-black fs-5" aria-current="page" href="https://links.agricreations.com/">All social links</a>
-          </li>
-          <li class="nav-item resume">
-            <a target="_blank" class="nav-link font-black fs-5" aria-current="page" href="https://link.agricreations.com/resume">Resume</i></a>
-          </li>
-          <li class="nav-item">
-            <a target="_blank" class="nav-link font-black fs-5" aria-current="page" href="mailto:moovendhan@agricreations.com"><i class="fa-solid fa-envelope fa-xl" style="color: #00aa85;"></i></a>
-          </li>
-
-          <!-- <li class="nav-item">
-            <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Myself gallery</a>
-          </li> -->
-          <!--drop down menu here-->
-          <!-- <li class="nav-item dropdown font-black fs-5">
-            <a class="nav-link dropdown-toggle font-black fs-5" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              More
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="nav-link font-black fs-5 dropdown-items" aria-current="page"
-                  href="https://drive.google.com/file/d/104V3TyjzgIoOLPq3jkoSgvjbUCrCOH6_/view?usp=sharing"
-                  target="_blank">Resume🗃️</a></li>
-              <li><a class="dropdown-item font-black" href="mailto:moovendhan@agricreations.com">Mail to</a></li>
-              <li><a class="dropdown-item font-black" href="videos.html">Videos here</a></li>
-            </ul>
-          </li> -->
-          <li class="nav-item" class="align-items:center;">
-            <!-- <a target="_blank" class="nav-link fs-5 text-danger allbranches  text-center" aria-current="page" data-bs-target="#all-branches"><i class="fa-solid fa-globe" ></i> All Branches</a> -->
-            <button type="button" class="btn nav-link fs-5 text-primary allbranches text-center" data-bs-toggle="modal" data-bs-target="#all-branches">
-              <i class="fa-solid fa-globe" ></i> All Branches
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Models for all branches  -->
-  <div class="modal fade " id="all-branches" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content" style="background-color: #89a6ff;">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 white" id="staticBackdropLabel"><i class="fa-duotone fa-browser"></i> Our Products</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Line  -->
-        <div class="text-center text-primary">Websites</div>
-        <div class="modal-body ">
-          <div class="row text-center" >
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.bestappsintamil.in/" target="_blank">
-                <h4 class="white poppins mb-2 h6">Best apps in tamil</h4>
-                <img class="img-fluid rounded" src="assets/img/products/bestappsintamil blog agricreations.png" alt="bestappsintamil blog agricreations">
-              </a>
-            </div>
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://techeyguys.agricreations.com/" target="_blank">
-                <h4 class="white poppins mb-2 h6">Techey guys</h4>
-                <img class="img-fluid rounded" src="assets/img/products/Techeyguys blogs agricreations.png" alt="techeyguys blog agricreations">
-              </a>
-            </div>
-          </div>
-        </div>
-<!-- line two  -->
-<div class="text-center text-danger">Youtube</div>
-        <div class="modal-body ">
-          <div class="row text-center" >
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.youtube.com/@bestappsintamil" target="_blank">
-                <h4 class="white poppins mb-2 h6">@bestappsintamil</h4>
-                <img class="img-fluid rounded" src="assets/img/products/bestappsintamil youtube.png" alt="bestappsintamil blog agricreations">
-              </a>
-            </div>
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://www.youtube.com/@HkragritechsYt" target="_blank">
-                <h4 class="white poppins mb-2 h6">@hkragritechsYt</h4>
-                <img class="img-fluid rounded" src="assets/img/products/hkragrtechs youtube.png" alt="techeyguys blog agricreations">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="mt-2 mb-2b text-center bg-danger">
-          <button style="padding-right: 9rem !important;
-          padding-left: 9rem !important;" type="button" class="btn btn-danger text-center" data-bs-dismiss="modal"><i class="fa-sharp fa-solid fa-heart-crack"></i>  Close</button>
-        
-        <!-- <a href="https://github.com/agricreation" target="_blank">
-          <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">visit github</button>
-        </a> -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!---landing pages-->
-  <div class="container col-xxl-8 px-4 py-1 pt-1 ">
-    <div class="row flex-lg-row-reverse align-items-center display-flex justify-content-center">
-      <div class="col-10 col-sm-8 col-lg-6 mt-1  pb-3">
-        <img src="assets/img/logo.png" class="d-block mx-lg-auto img-fluid logos" alt="Bootstrap Themes" width="700"
-          height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-4 white">Hi,
-          I am, <br>
-          Moovendhan V,</h1>
-        <p class="lead lh-224 white">Hi, I am Moovendhan. Webdeveloper, I was writing an articles on a blog. And I am
-          interested in multimedia also, for the past two years, I have been working on youtube. While doing youtube, I
-          have learned lot of things like photoshop and premiere pro.
-          <a target="_blank" href="https://blogs.agricreations.com">blog📲 Know more.....</a>
-        <div class="gap-2 d-md-flex justify-content-md-start mt-3">
-          <a type="button" class="" data-bs-toggle="modal" data-bs-target="#web-developer">
-            <button type="button" class="btn-info px-4 mb-1 poppins" ><i class="fa-sharp fa-solid fa-code"></i> Web developer</button>
-          </a>
-          
-  <!-- Modal -->
-  <div class="modal fade " id="web-developer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content" style="background-color: #89a6ff;">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5 white" id="staticBackdropLabel">My Projects</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body ">
-          <div class="row text-center" >
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://github.com/agricreation/moovendhanv.git" target="_blank">
-              <h4 class="white poppins mb-2 h6">My personal website</h4>
-              <img class="img-fluid rounded" src="assets/img/moovendhan.png" alt="moovendhan website">
-            </a>
-            </div>
-            <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-              <a href="https://git.selfmade.ninja/moovendhan/photogram-agri.git" target="_blank">
-              <h4 class="white poppins mb-2 h6">Photogram (Github)</h4>
-              <img class="img-fluid rounded" src="assets/img/photogram.png" alt="photogram moovendhan">
-            </a>
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <a href="https://git.selfmade.ninja/moovendhan" target="_blank">
-          <button type="button" class="btn poppins white" style="background-color: rgba(255, 175, 3, 0.836);">sna gitlab</button>
-        </a>
-        <a href="https://github.com/agricreation" target="_blank">
-          <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">visit github</button>
-        </a>
-        </div>
-      </div>
-    </div>
-  </div>
-          <a type="button" data-bs-toggle="modal" data-bs-target="#video-editor">
-            <button type="button" class="btn-info px-4 mb-1 poppins" ><i class="fa-solid fa-video"></i> Video editor</button>
-          </a>
-        </div>
-
-        <div class="gap-2 d-md-flex justify-content-md-start mt-3" >
-          <a type="button" data-bs-toggle="modal" data-bs-target="#blogger">
-            <button type="button" class="btn-info px-4 mb-1 poppins"><i class="fa-brands fa-blogger"></i> Blogger</button>
-          </a>
-
-          <!---modals for blogger-->
-          <div class="modal fade " id="blogger" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-              <div class="modal-content" style="background-color: #89a6ff;">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 white" id="staticBackdropLabel">My Blogs</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                  <div class="row text-center" >
-                    <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                      <a href="https://techeyguys.agricreations.com" target="_blank">
-                      <h4 class="white poppins mb-2 h6">Techey guys</h4>
-                      <img class="img-fluid rounded" src="assets/img/techeyguys.png" alt="">
-                    </a>
-                    </div>
-                    <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                      <a href="https://www.bestappsintamil.in/" target="_blank">
-                      <h4 class="white poppins mb-2 h6">Best apps in tamil</h4>
-                      <img class="img-fluid rounded" src="assets/img/bestintrestingapps.bestappsintamil.in.png" alt="">
-                    </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer pb-3">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!---modals for youtube-->
-          <div class="modal fade " id="yt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-              <div class="modal-content" style="background-color: #89a6ff;">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5 white" id="staticBackdropLabel">Youtube</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                  <div class="row text-center" >
-                    <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                      <a href="https://www.youtube.com/c/HkragritechsYt" target="_blank">
-                      <iframe src="hkragritechs.html" class="img-fluid rounded" frameborder="0"></iframe>
-                      <h4 class="white poppins mt-3 mb-2 h6">Hkr agri techs</h4> </a>
-                    </div>
-                    <div class="col-6 p-3" style="background-color: rgba(56, 55, 55, 0.253);">
-                      <a href="https://www.youtube.com/@bestappsintamil" target="_blank">
-                      <iframe src="bestappsintamil.html" class="img-fluid rounded" frameborder="0"></iframe> 
-                      <h4 class="white poppins mt-3 mb-2 h6">Best apps in tamil</h4>
-                    </a>
-                    </div>
-        
-                  </div>
-                </div>
-                <div class="modal-footer pb-3">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <a href="https://git.selfmade.ninja/moovendhan" class="social-logo-1">
-                <img src="assets/img/svg/behance.svg" alt="">
-              </a> 
-              <a href="https://git.selfmade.ninja/moovendhan" class="social-logo-1">
-                <img src="assets/img/svg/blogger.svg" alt="">
-              </a> -->
-          <a href="https://git.selfmade.ninja/moovendhan" class="social-logo">
-            <img src="assets/img/svg/github.svg" alt="">
-          </a>
-          <a href="https://www.instagram.com/moovendhan_agriculture/" class="social-logo">
-            <img src="assets/img/svg/instagram.svg" alt="">
-          </a>
-
-          <!-- <a href="https://www.facebook.com/moovendhan.agriculture/" class="social-logo">
-                <img src="assets/img/svg/facebook.svg" alt="">
-              </a> -->
-          </a>
-          <a class="social-logo" type="button" data-bs-toggle="modal" data-bs-target="#yt">
-            <img src="assets/img/svg/youtube.svg" alt="">
-          </a>
-          <a href="https://www.linkedin.com/in/moovendhanv" class="social-logo">
-            <img src="assets/img/svg/linkedin.svg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="container about-us mt-3 poppins rounded">
-      <div class="row">
-        <div class="col-lg-6 about-chirld cards-01" type="button" class="btn btn-primary" data-bs-toggle="modal"
-          data-bs-target="#video-editor">
-          <h3 class="white card-text1" style=" color: aqua !important;">Hire me<br><span 
-              class="white card-text2">as a video editor</span> </h3>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="video-editor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content" style="background-color: #89a6ff;">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5 white" id="staticBackdropLabel">Youtube</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="ratio ratio-16x9 yt-model b-3">
-                  <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" title="YouTube video"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://www.youtube.com/@HkragritechsYt">
-                  <button type="button" class="btn poppins white"
-                    style="background-color: rgba(190, 0, 0, 0.836);">Subscribe <span id="subscriberCount">live sub
-                      count</span></button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 about-yt p-3 about-chirld">
-          <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto" type="button" class="btn btn-primary"
-            data-bs-toggle="modal" data-bs-target="#video-editor">
-            <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" title="YouTube video"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="container about-us about-us-r mt-3 poppins rounded">
-        <div class="row">
-          <div class="col-lg-6 about-yt p-3 about-chirld">
-            <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto">
-              <iframe src="https://www.youtube.com/embed/oHAX4E3hpC4?rel=0" title="YouTube video" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-lg-6 about-chirld">
-            <h3 class="white" style="font-size: 32px; color: aqua !important;">Hire me<br><span style="font-size:25px" class="white">as a web developer</span> </h3>
-          </div>
-        </div>
-      </div> -->
-  <!---Footer-->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Agricreations, All right recived</p>
-
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap" />
-        </svg>
-      </a>
-
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="mailto:agricreationofficial@proton.me" class="nav-link px-2 text-muted">Contact
-            us</a></li>
-      </ul>
-    </footer>
-  </div>
-
-  <!---whats appp contact-->
-  <!-- <div class="floating-whatsapp">
-    <img src="assets/img/whatsapp.png" alt="">
-  </div> -->
-
-  <!-- mainEnd  -->
 </div>
 
-<script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-</script>
-  <!---Javascript files-->
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="sidebars.js"></script>
-  <script src="assets/dist/js/script.js"></script>
-  <script src="api/ytapi.js"></script>
-  <script src="api/ytapi.bestappsintamil.js"></script>
-  <script src="script.js"></script>
 </body>
-
 </html>

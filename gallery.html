@@ -1,119 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moovendhan v</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="Myself : Moovendhan v(Agricreations), Webdeveloper, Blogger, Video editor, Youtuber">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moovendhan gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sidebars/">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon"
+    href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <style>
+    @media only screen and (max-width: 768px) {
+      /* mobile */
+    }
 
+    .hide {
+      display: none;
+    }
+
+    #main {
+      transition: opacity 1s ease-in-out;
+    }
+  </style>
 </head>
+
 <body>
- <!-- Messenger Chat plugin Code -->
- <div id="fb-root"></div>
-
- <!-- Your Chat plugin code -->
- <div id="fb-customer-chat" class="fb-customerchat">
- </div>
-
- <script>
-   var chatbox = document.getElementById('fb-customer-chat');
-   chatbox.setAttribute("page_id", "102433722703624");
-   chatbox.setAttribute("attribution", "biz_inbox");
- </script>
-
- <!-- Your SDK code -->
- <script>
-   window.fbAsyncInit = function() {
-     FB.init({
-       xfbml            : true,
-       version          : 'v15.0'
-     });
-   };
-
-   (function(d, s, id) {
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) return;
-     js = d.createElement(s); js.id = id;
-     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
- </script>
+  <!-- Loading screen  -->
+  <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div class="main fade visually-hidden" id="main">
     <!--Navbars-->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png"alt="Moovendhan"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Moovendhan"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active font-black fs-5" aria-current="page" href="index.html">Moovendhan</a>
+              <a class="nav-link font-black fs-5" aria-current="page" href="index.html">Moovendhan</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link font-black fs-5" aria-current="page" href="aboutus.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Reference</a>
+              <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Youtube</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-black fs-5" aria-current="page" href="youtube.html">Myself gallery</a>
+              <a class="nav-link font-black fs-5" aria-current="page" href="blog.html">Blogs</a>
             </li>
-            <!--drop down menu here-->
-            <li class="nav-item dropdown font-black fs-5">
-              <a class="nav-link dropdown-toggle font-black fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link font-black fs-5 dropdown-items" aria-current="page" href="https://drive.google.com/file/d/1PnrYZZRw-UshNr9JPRcUGoEtP67rKyBf/view?usp=sharing" target="_blank">Resume🗃️</a></li>
-                <li><a class="dropdown-item font-black" href="mailto:agricreationofficial@protonmail.com">Mail to</a></li>
-                <li><a class="dropdown-item font-black" href="videos.html">Videos here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link font-black fs-5 active" aria-current="page" href="gallery.html">Gallery</a>
             </li>
-    
+            <li class="nav-item">
+              <a target="_blank" class="nav-link font-black fs-5" aria-current="page"
+                href="https://links.agricreations.com/">All social links</a>
+            </li>
+            <li class="nav-item resume">
+              <a target="_blank" class="nav-link font-black fs-5" aria-current="page"
+                href="https://link.agricreations.com/resume">Resume</i></a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" class="nav-link font-black fs-5" aria-current="page"
+                href="mailto:moovendhan@agricreations.com"><i class="fa-solid fa-envelope fa-xl"
+                  style="color: #00aa85;"></i></a>
+            </li>
+            <button type="button" class="btn nav-link fs-5 text-primary allbranches text-center" data-bs-toggle="modal"
+              data-bs-target="#all-branches">
+              <i class="fa-solid fa-globe"></i> All Branches
+            </button>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-<!---Gallery-->
-    <div class="container">
-      <div class="row">
-        <div class="col"><img class="img-fluid" src="assets/gallery/money heist banner.jpg" alt=""></div>
-        <div class="col"><img src="assets" alt=""></div>
-        <div class="col"></div>
+
+    <div class="row mt-3">
+      <!-- first  -->
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <img
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEjGxNgvab03qqiCSwFbzVv9ETIzCOW41oIM7U4VHyrQIJi4hmQwih9Mr_GEPPQ51AJvgqWgAQk8hu6ujZMDFXtNdT2dNNcvyJY3wspvFBrh4NTMl6iWxKjAOifdCUyTCZb5F0fKxvfBan-K6mO9lAfVCF9cH8YfHqiMiWxoRlCFLw37H46HzsEjToPA4Q=w256-h320"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery shanchiediting" />
+
+        <video controls class="w-100 shadow-1-strong rounded mb-4">
+          <source
+            src="https://rr5---sn-cnoa-h55z.googlevideo.com/videoplayback?expire=1681836539&ei=e1k-ZM6ICeyasfIP_LCAoAM&ip=117.252.153.33&id=033a9a874ab41db3&itag=18&source=blogger&mh=2M&mm=31&mn=sn-cnoa-h55z&ms=au&mv=m&mvi=5&pcm2cms=yes&pl=20&susc=bl&eaua=rT181dZUndg&mime=video/mp4&vprv=1&dur=15.232&lmt=1628049286652979&mt=1681807272&txp=1311224&sparams=expire,ei,ip,id,itag,source,susc,eaua,mime,vprv,dur,lmt&sig=AOq0QJ8wRgIhAJ7oIfvm2F9W_OyfmNdS2Qz3TCqv6njxD8orJEdqxc9eAiEAs-ADW1vJ6WuP7YPQ0p3R4zoc-9Hjgw7e_0GPSkGZTEg%3D&lsparams=mh,mm,mn,ms,mv,mvi,pcm2cms,pl&lsig=AG3C_xAwRAIgfz73MvGCegvVtzImBa-yKqdLEeQqnfZ7Zu7AKqhqRU0CIBurk2Kh0PvxsHTKfrS4dhTvtRw2LR-kfxpUiA_1SWsm&cpn=2LfywXoBubdd5FJe&c=WEB_EMBEDDED_PLAYER&cver=1.20230411.01.00"
+            type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <img
+          src="https://1.bp.blogspot.com/-SHOyHAnJSQk/XzPULsf4FQI/AAAAAAAABio/Vl05QVIUc8MOZfWaxWmDZqhGazTt3j29QCLcBGAsYHQ/s640/IMG_20200720_165415.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery godofwar" />
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfAh9_ekbO4bONlX4FGRizkzSgsRrA9UrasE5k1Gqk-HDD6n_Jen0t8e_DZH9liuIfR-_8q4Y5_HhYHsT1nx9z-iXGCkhHehyJDne-Ly01Io0uKovgtL0gqrSZonGXmIC4I0gK_V2k8qF_GKxKmJ7WleMjzL-xaZwZXdmafwETPLF6Wcv4HpRWvLGRjQ/s1600/agri%20dp.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery godofwar" />
       </div>
+      <!-- second  -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <img
+          src="https://blogger.googleusercontent.com/img/a/AVvXsEiabOqWqzTxIX_Q28LC4mYioRbigQdKDysM2FDjTRvp4qMTnEW1zziQQVgjUNzI9vpquHjGjth2ZHB2o6ODSLXthbIIaaGvQqayUW_LD0CDh7iNLKEPieevnZIWLF9PzOU9KEbnAr1j9cxcSsFq_qRe_Ax_hJB2pN_mMOKguUChnvLITU9cEU7cCKcIRw=s16000"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery" />
+
+        <img
+          src="https://lh3.googleusercontent.com/-cGOwoF6Trd8/YQoPYsoJkjI/AAAAAAAACJ8/mdMDGDQjeIwHEboT3R3i5NYzVR0MhkOhgCLcBGAsYHQ/24%2Bagri.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery birthday" />
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0cFscbx6o8HL3yoswa-sm23u9kKmyQSgZMbQGyv630BKbz5Zluze4fgJE-XM0pm9IyrxyoQkfdxNpWVFrCqRXPC2a-quhRP0aFmrq6fN3bd05_7x-S3IonZTFVhrW-LV56-UhDEzG45P2kh6NbjyRrwy5C3Km7DvOU8xZPNdBTN9Igtag938uWpzlNA/s1600/moovendhan%20chandrumech.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery birthday" />
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi9MEetj-nq4oOh47hg1uPD1_psEaNTq7HMiT4kCkgSvgyWVK-KgSvQ5DINO53cgSGb67rL95XO4jgPu2bp2jwoq-C2h1BmZqM13WLGDjbz93OffGmOd6N1q1eMxVLQIgChM2WDiHUIe_wy_JB1ZdNkbEGCu-_QlYiGQal3tv04lK525O7JP-y2Wgb7A/s1600/moovendhan%20agricreations%20moneyheist.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery birthday" />
+
+      </div>
+      <!-- third  -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+
+        <img
+          src="https://lh3.googleusercontent.com/-N7KgnsELdKs/YQoPRfgh5DI/AAAAAAAACJ4/f3immAZBIqstEqIX_R8J3d_1fpCOcOvywCLcBGAsYHQ/fire%2Bin%2Bhand%2Bfinal%2Boutpput.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery fire" />
+
+        <img
+          src="https://lh3.googleusercontent.com/-ta09F8aJub8/YQoPcEuNMTI/AAAAAAAACKE/6j0-KaiJjp4Que-_49P-uL_DAjgovEIUQCLcBGAsYHQ/moovendhan%2Bagriculture.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery " />
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKUCQ-P1kX44mwn1gutpz9CY1S9l0upEg8TKmv1SvQq_K52hz-w6d2kcnyQUiu_D_rRqXx82WDvtY3zFKBk3vKincmUhfM00uXYEfJvgf_4kdSze_D0C61fwzBovH40iTaljnPa12jUW45tlWX9n6rYd2yaM-o-mC3gJaB-1kRPIYAuPU30tjAUf3iUw/s1600/moovendha%20agricreations%20pubg%20poster%20editing.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery " />
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDeFl3EAuf3_9qejl9keScIJPmlnKMwAsK2l7zMAYDBGVdwzoxQBSqQZE1Ug83V4qiXeczZm4AyF1ijEprsZPUdGVslSiEzL1IaIK8CVBQjFpN15tCPcXHuxS0ANPLqaB_d71lu5IKZOSt4-WtD5_Ue_QSbCXMkAXx2q3LNwI_jNAryPGa_G9hwwL9wA/s1600/moovendhan%20agricreatins%20pubg%20poster.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery " />
+
+        <img
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8ruUdkR73uXRTHl3bBHM8KuubztoUgYoYG88VCKnznmsZpNB-gqiXZhWMEdz2u1QJZnKvNVOjLxgJ6yxMpf2U8CGqJZ7qyftTas9RraTtSKX0eTvlakfECwOkdcmgs_7jVQYMqhu4SR6ll5C-YS5JD9ukNocMc1_8vO-BVEQBo-VOM36Fne36uAX3bQ/s1600/moovendhan%20agricreations%20poster%20gta.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery " />
+
+
+        <img
+          src="https://3.bp.blogspot.com/-vD8P8HVmk30/Wzsp6CtzlzI/AAAAAAAAAJQ/-1uLRoXXCPYO8wPz0yBmkHAtbwmIvktbACLcBGAs/s400/jeevanandham%2Bgovt%2Bhr%2Bsec%2Bschool.jpg"
+          class="w-100 shadow-1-strong rounded mb-4" alt="moovendhan agricreations gallery birthday" />
+      </div>
+
+
     </div>
-       <!---Footer-->
-       <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
-          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Agricreations, All right recived</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-muted">About</a></li>
-            <li class="nav-item"><a href="mailto:agricreationofficial@proton.me" class="nav-link px-2 text-muted">Contact us</a></li>
-          </ul>
-        </footer>
-      </div>
-      
-      <!---whats appp contact-->
-        <!-- <div class="floating-whatsapp">
-          <img src="assets/img/whatsapp.png" alt="">
-        </div> -->
-      
-          <!---Javascript files-->
-          <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="sidebars.js"></script>
-          <script src="assets/dist/js/script.js"></script>
-          
-      </body>
-      </html>
+  </div>
+  <!---Javascript files-->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="sidebars.js"></script>
+  <script src="assets/dist/js/script.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
