@@ -10,6 +10,7 @@ function contentLoaded() {
 }
 contentLoaded();
 
+  
 //Creating div element for slider
 
 // const insertSlide = document.getElementById('insertSlide');
