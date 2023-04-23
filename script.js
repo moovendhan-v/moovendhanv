@@ -2,15 +2,21 @@ function contentLoaded() {
   const main = document.getElementById("main");
   const loader = document.querySelector("#loader");
 
-  document.addEventListener("DOMContentLoaded", () => {
+  var timeOut = setTimeout(()=>{
     main.classList.remove("visually-hidden");
     loader.classList.add("visually-hidden");
     main.classList.add("show");
+  },7000); //If the content is not loaded this will executed after 7sec
+
+  window.addEventListener("load", function() {
+    main.classList.remove("visually-hidden");
+    loader.classList.add("visually-hidden");
+    main.classList.add("show");
+    clearTimeout(timeOut);
   });
 }
-contentLoaded();
+contentLoaded()
 
-  
 //Creating div element for slider
 
 // const insertSlide = document.getElementById('insertSlide');
