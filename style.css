@@ -3,12 +3,22 @@
 body{
     background: #222222 !important;
     min-height: 100vh;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-effect {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 .poppins{
     font-family: 'Poppins', sans-serif;
 }
 .roboto{
     font-family: 'Roboto', sans-serif;
+}
+.toastMessage {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 97, 97);
+  position: sticky;
 }
 .logo img{
     max-width: 50px;
