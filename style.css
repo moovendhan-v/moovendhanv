@@ -5,6 +5,19 @@ body{
     min-height: 100vh;
     transition: opacity 0.5s ease-in-out;
 }
+.navbarItems a{
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 600;
+}
+.navbarItems a:hover{
+  color: rgb(171, 88, 248) !important;
+  font-weight: 600;
+}
+.darkTheme{
+  background-color: #202020 !important;
+  border:  1px solid #242424 !important;
+}
 .fade-effect {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -21,11 +34,7 @@ body{
   position: sticky;
 }
 .logo img{
-    max-width: 50px;
-    height: auto;
-}
-.logo img:hover{
-    max-width: 50px;
+    max-width: 35px;
     height: auto;
 }
 .nav-bg{
