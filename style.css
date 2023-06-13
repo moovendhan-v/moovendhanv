@@ -13,7 +13,6 @@ body{
   border: none !important;
 }
 .navbarItems a{
-  color: white !important;
   font-size: 16px !important;
   font-weight: 600;
 }
@@ -25,7 +24,9 @@ body{
   background-color: #202020 !important;
   border:  1px solid #242424 !important;
 }
-
+.live{
+  color: rgb(171, 88, 248) !important;
+}
 .fade-effect {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -49,12 +50,10 @@ body{
     background-color: rgb(39, 39, 39);
 }
 .font-black{
-    color: rgb(0, 0, 0) !important;
+    color: rgb(252, 252, 252) !important;
 }
 .font-black:hover{
-    color: rgb(0, 17, 255) !important;
     transition: 0.4s;
-
 }
 .btn-info{
     background-color: rgb(0, 0, 0) !important;
