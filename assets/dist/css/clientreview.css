@@ -1,0 +1,82 @@
+body{    
+    background: blueviolet;
+    font-family: montserrat;
+}
+section {
+	display: grid;
+	place-items: center;
+
+}
+.testimonials{
+    max-width: 1500px;
+    padding: 01px 0px;
+    margin: 0 auto 5px auto;
+}
+.single-item{
+    background: #d4d4d4;
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 5px;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+    text-align: center;    
+}
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border:5px solid blueviolet;
+}
+.content{
+    font-size: 18px;
+}
+
+.content p span {
+	font-size: 16px;
+	margin-right: 20px;
+    color: blueviolet;
+}
+.socials i {
+	margin-right: 25px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	background-color: blueviolet;
+    border-radius: 5px !important;
+}
+.blur{
+    /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+/* .carousel-control-prev{
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(139, 67, 255)) !important;
+}
+.carousel-control-next{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(168, 62, 255)) !important;
+} */
+@media (max-width:767px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
