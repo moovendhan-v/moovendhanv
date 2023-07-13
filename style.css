@@ -269,6 +269,7 @@ border-radius: 50px !important;
 }
   @media only screen and (max-width: 768px) {
     /* mobile */
+
     .card-text1{
       font-size: 10vh !important;
     }
@@ -301,8 +302,9 @@ border-radius: 50px !important;
 
 
   }
-
+/* //Tab screen medium devices */
   @media only screen and (max-width: 992px) {
+ 
     .navIcons{
             background-color: #5a5a5a6b;
             min-width: 10%;
@@ -341,6 +343,7 @@ border-radius: 50px !important;
     }
 
     @media only screen and (max-width: 1200px) {
+
       .about-us{
         background-color: #000000;
         height: 290px;

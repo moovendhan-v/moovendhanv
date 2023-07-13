@@ -1,0 +1,27 @@
+
+     @media only screen and (max-width: 1200px) {
+      .titleFlex{
+        font-size: calc(500rem+ 1vw) !important;
+      }
+    }   /* * Tab screen medium devices */ 
+  @media only screen and (max-width: 992px) {
+    .titleFlex{
+      font-size: calc(0.5rem + 1vw) !important;
+    }
+    .paraFlex{
+      font-size: calc(0.3rem + 1vw) !important;
+    }
+}
+
+    @media only screen and (max-width: 768px) {
+    /* mobile */
+    .bossTextFlex{
+      font-size: calc(0.9rem + 1vw) !important;
+    }
+    .titleFlex{
+      font-size: calc(1rem + 1vw) !important;
+    }
+    .paraFlex{
+      font-size: calc(0.8rem + 1vw) !important;
+    }
+}
