@@ -1,34 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Getting Clients IP</title>
-	<style>
-	p, h1 {
-		color: green;
-	}
-	</style>
-
-	<script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script>
-	
-	<script>
-
-				
-	$.getJSON("https://api.ipify.org?format=json", function(data) {
-		
-		// Setting text of element P with id gfg
-		$("#gfg").html(data.ip);
-	})
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<center>
-		<p id="gfg"></p>
+    
+    <script>
+        const ipifyUrl = 'https://api.ipify.org?format=json';
 
-	</center>
+fetch(ipifyUrl)
+    .then(response => response.json())
+    .then(data => {
+        const clientIp = data.ip;
+        console.log(`Client IP: ${clientIp}`);
+    })
+    .catch(error => console.error(error));
+    </script>
 </body>
-
 </html>
