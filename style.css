@@ -45,6 +45,60 @@ body{
 .client_col2{
   padding: 20px;
 }
+.whatsappIcon{
+  z-index: 100;
+  background-color: white;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #0018df;
+  transition: 1s;
+}
+.whatsappIcon:hover{
+  background-color: #3246ff;
+  color: white !important;
+  cursor: pointer;
+}
+.whatsappIcon:hover .fa-whatsapp{
+  color: white;
+}
+.whatsAppContent{
+  opacity: 0;
+}
+.whatsappIcon:hover .whatsAppContent{
+  color: white;
+  background-color: #0018df;
+  transition: 1s;
+  opacity: 1;
+}
+.whatsAppContent{
+  background-color: white;
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  left: -180px;
+  padding: 10px;
+  border-radius: 5px;
+}
+@keyframes whatsapp {
+	0% {
+		transform: scale(0.5);
+  left: -100px;
+	}
+
+	100% {
+		transform: scale(1);
+  left: -180px;
+	}
+}
+.whatsappIcon:hover .whatsAppContent{
+  animation: whatsapp ease 1s 1 normal forwards;
+}
+.whatsAppContent p{
+  margin-bottom: 0 !important;
+}
 .clinents_review_row{
   display: flex;
   width: 100%;
@@ -433,7 +487,9 @@ border-radius: 50px !important;
   }
 /* //Tab screen medium devices */
   @media only screen and (max-width: 992px) {
- 
+    .hireMe{
+      padding: 20px 0;
+    }
     .navIcons{
             background-color: #5a5a5a6b;
             min-width: 10%;
