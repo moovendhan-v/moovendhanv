@@ -42,6 +42,10 @@
   #main{
     transition: opacity 1s ease-in-out;
   }
+  #ytiframe html { 
+    display: none;
+  }
+
 </style>
 </head>
 
@@ -54,11 +58,10 @@
     <i class="fa-brands fa-whatsapp fa-2xl"></i>
   </a>
   </div>
+
 <div class="loading_bar">
 </div>
-  
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
+
   <!-- Loading screen  -->
 <div id="loader" class="text-center d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="progress_bar text-primary" role="status">
@@ -66,16 +69,6 @@
     </div>
 </div>
 
-
-<!-- <div class="toast fixed-bt  " role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
-      May be some content load later 
-    </div>
-    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-</div> -->
- <!--Navbars-->
  <div class="main fade visually-hidden" id="main">
 
   <nav class="navbar darkTheme navbar-expand-lg">
@@ -363,7 +356,7 @@
               </div>
               <div class="modal-body">
                 <div class="ratio ratio-16x9 yt-model b-3">
-                  <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" title="YouTube video"
+                  <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0"  title="YouTube video"
                     allowfullscreen></iframe>
                 </div>
               </div>
@@ -382,7 +375,7 @@
         <div class="col-lg-6 about-yt p-3 about-chirld">
           <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto" type="button" class="btn btn-primary"
             data-bs-toggle="modal" data-bs-target="#video-editor">
-            <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" title="YouTube video"
+            <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" id="ytiframe" title="YouTube video"
               allowfullscreen></iframe>
           </div>
         </div>
@@ -484,14 +477,17 @@
     </div>
 </section>
 
-<!-- <div class="container">
+<div class="container">
 
   <section class="client_reviews">
-    <div class="container">
+    <div class="client_reviews_container">
       <div class="clinents_review_row">
         <div class="client_review_col1">
           <div class="client_review_content">
             <h3>Client Reviews</h3>
+          </div>
+          <div class="client_review_info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="client_review_col2">
@@ -520,7 +516,7 @@
       </div>
     </div>
 </section>
-</div> -->
+</div>
 
 
 
