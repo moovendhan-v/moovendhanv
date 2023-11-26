@@ -2,11 +2,11 @@ body{
     background: blueviolet;
     font-family: montserrat;
 }
-section {
+/* section {
 	display: grid;
 	place-items: center;
 
-}
+} */
 .testimonials{
     max-width: 1500px;
     padding: 01px 0px;
