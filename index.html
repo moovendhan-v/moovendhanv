@@ -23,7 +23,12 @@ rel="stylesheet"
     href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <style>
-
+.arrow-navigate{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: 50%;
+}
   @media (min-width: 1400px){
     .col-xxl-8 {
       flex: 0 0 auto;
@@ -51,6 +56,39 @@ rel="stylesheet"
   #ytiframe html { 
     display: none;
   }
+
+  /* animation  */
+  .slide-bottom {
+	-webkit-animation: slide-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: slide-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+ @-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 100%;
+
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 10%;
+
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+            opacity: 10%;
+  }
+}
 
 </style>
 </head>
@@ -191,7 +229,14 @@ rel="stylesheet"
 
 
   <!---landing pages-->
-  <div class="container col-xxl-8 px-4 py-1 pt-1 ">
+  <div class="container position-relative col-xxl-8 px-4 py-1 pt-1 ">
+    <div class="arrow-navigate slide-bottom">
+      <a href="">
+        <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i>
+        <!-- <img src="https://cdn-icons-png.flaticon.com/512/1883/1883383.png " alt=""> -->
+      </a>
+    </div>
+    
     <div class="row flex-lg-row-reverse align-items-center display-flex justify-content-center">
       <div class="col-10 col-sm-8 col-lg-6 mt-1  pb-3">
         <img src="assets/img/logo.png" class="d-block mx-lg-auto img-fluid logos" alt="Bootstrap Themes" width="700"
@@ -242,6 +287,7 @@ rel="stylesheet"
           <button type="button" class="btn poppins white" style="background-color: rgba(190, 0, 0, 0.836);">visit github</button>
         </a>
         </div>
+        
       </div>
     </div>
   </div>
@@ -341,53 +387,8 @@ rel="stylesheet"
         </div>
       </div>
     </div>
-
-    <div class="container about-us mt-3 poppins rounded">
-      <div class="row">
-        <div class="d-flex align-items-center col-lg-6 about-chirld cards-01" type="button" class="btn btn-primary" data-bs-toggle="modal"
-          data-bs-target="#video-editor">
-          <h3 class="white card-text1" style=" color: aqua !important;">Hire me<br><span 
-              class="white card-text2">as a video editor</span> </h3>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="video-editor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content" style="background-color: #89a6ff;">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5 white" id="staticBackdropLabel">Youtube</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="ratio ratio-16x9 yt-model b-3">
-                  <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0"  title="YouTube video"
-                    allowfullscreen></iframe>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="https://www.youtube.com/@HkragritechsYt">
-                  <button type="button" class="btn poppins white"
-                    style="background-color: rgba(190, 0, 0, 0.836);">Subscribe <span id="subscriberCount">live sub
-                      count</span></button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 about-yt p-3 about-chirld">
-          <div class="ratio ratio-16x9 yt-about-bd" width="100%" height="auto" type="button" class="btn btn-primary"
-            data-bs-toggle="modal" data-bs-target="#video-editor">
-            <iframe src="https://www.youtube.com/embed/GnY3ewl2u_E?rel=0" id="ytiframe" title="YouTube video"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+
   <section id="our_service">
     <div class="our_services">
       <h3>OUR SERVICES</h3>
@@ -575,16 +576,20 @@ rel="stylesheet"
   }).mount();
 });
 
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const leftArrow = document.querySelector('#home1-slider .splide__arrows .splide__arrow--prev');
     const img = document.createElement('img');
-    img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23000000%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E";
+    
+    // Updated SVG code with only white stroke
+    const svgCode = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23ffffff%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E';
+    img.src = svgCode;
     leftArrow.appendChild(img);
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     const rightArrow = document.querySelector('#home1-slider .splide__arrows .splide__arrow--next');
     const img = document.createElement('img');
-    img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23000000%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E";
+    img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23ffffff%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E";
     rightArrow.appendChild(img);
 });
 
@@ -622,26 +627,97 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </div>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top-footer">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Agricreations, All right recived</p>
 
-      <a href="/"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap" />
-        </svg>
-      </a>
-
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="aboutus.html" class="nav-link px-2 text-muted">About</a></li>
-        <li class="nav-item"><a href="mailto:agricreationofficial@proton.me" class="nav-link px-2 text-muted">Contact
-            us</a></li>
-      </ul>
-    </footer>
-
-  </div>
+<footer>
+    <div class="footer font_regular">
+      <!-- Fototer subscribe  -->
+      <div class="footer_subscribe">
+  
+        <div class="footer_subscribe_content">
+          <h3>
+            looking for awesome content <span class="footer_subscribe__content">Join our community</span>
+          </h3>
+        </div>
+  
+        <div class="footer_subscribe_email">
+          <div class="footer_subscribe_email_input">
+            <input type="text" placeholder="Your email id here">
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+  
+      </div>
+      <!-- Footer links  -->
+      <div class="footer_link">
+        <div class="footer_link1">
+          <h3>Quick Links</h3>
+          <div class="footer_link1_content">
+            <a href="/">Home</a>
+            <a href="/">About Us</a>
+            <a href="/">Contact Us</a>
+            <a href="/">Carrer</a>
+            <a href="/">News</a>
+            <a href="/">Download Ebooks</a>
+            <a href="/">Learning</a>
+            <a href="/">Webinars</a>
+          </div>
+        </div>
+  
+        <div class="footer_link2">
+          <h3>Services</h3>
+          <div class="footer_link2_content">
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+          </div>
+          <div class="footer_link2__content">
+            <h3>Cources</h3>
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+            <a href="/">Lorem, ipsum.</a>
+          </div>
+        </div>
+        <div class="footer_link3">
+          <h3>Address</h3>
+          <div class="footer_link3_content">
+            <a href="/">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nihil eos perspiciatis voluptatem eaque vel?</a>
+          </div>
+        </div>
+  
+        <div class="footer_link4">
+          <h3>Contact Us</h3>
+          <div class="footer_link4_content">
+            <a href="/">- Lorem, ipsum.</a>
+            <a href="/">-Lorem, ipsum.</a>
+          </div>
+          <div class="footer_link4__content">
+            <h3>Social Link</h3>
+            <div class="footer_social_link">
+              <div class="facebook rounded_social">
+                <i class="fa-brands fa-facebook-f "></i>
+              </div>
+              <div class="facebook rounded_social">
+                <i class="fa-brands fa-twitter "></i>
+              </div>
+              <div class="facebook rounded_social">
+                <i class="fa-brands fa-instagram "></i>
+              </div>
+              <div class="facebook rounded_social">
+                <i class="fa-brands fa-linkedin-in "></i>
+              </div>
+              <div class="facebook rounded_social">
+                <i class="fa-brands fa-whatsapp "></i>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </footer>
 
 
   <!---whats appp contact-->
