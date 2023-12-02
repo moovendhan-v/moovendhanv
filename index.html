@@ -752,6 +752,23 @@
   </div>
 
 
+  <script>
+    // Function to get the client's IP address using ipify API
+    function getIpAddress() {
+      fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          console.log('Your IP address is ' + data.ip);
+        })
+        .catch(error => {
+          console.error('Error fetching IP address:', error);
+        });
+    }
+
+    // Call the function when the page loads
+    getIpAddress();
+  </script>
+
   <!---Javascript files-->
   <script src="script.js"></script>
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
