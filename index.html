@@ -22,6 +22,12 @@
     href="https://1.bp.blogspot.com/-98FLdlCRUd0/YWKOXC4rC1I/AAAAAAAAA48/6TOa-g8_AXA96ZUf0wnQZk-xTExGgRNzACLcBGAsYHQ/s150/hkr%2Bagri%2Btechs%2Blogo%2Btamil.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <style>
+   .animated-loading {
+      opacity: 0;
+      transform: translateY(200px);
+      transition: opacity 1s, transform 1s;
+      margin-top: 0; /* Set the initial margin-top */
+    }
     .arrow-navigate {
       position: absolute;
       bottom: 20px;
@@ -424,12 +430,12 @@
       </div>
     </div>
 
-    <section id="our_service">
+    <section id="our_service" class="our_services">
       <div class="our_services">
         <h3>OUR SERVICES</h3>
       </div>
 
-      <div class="our_service_slide">
+      <div class="our_service_slide animated-loading">
         <div id="home1-slider" class="splide">
           <div class="splide__track">
             <ul class="splide__list our_service_lists">
@@ -457,14 +463,14 @@
           </div>
         </div>
 
-        <div class="our_service_readmore">
+        <!-- <div class="our_service_readmore">
           <a href="#">Read More</a>
-        </div>
+        </div> -->
+
       </div>
     </section>
     <section>
-      <div class="tesstimonial_container">
-
+      <div class="tesstimonial_container animated-loading">
         <section id="testimonials">
           <div class="testimonials">
             <div class="testimonial_content">
@@ -752,24 +758,9 @@
   </div>
 
 
-  <script>
-    // Function to get the client's IP address using ipify API
-    function getIpAddress() {
-      fetch('https://api.ipify.org?format=json')
-        .then(response => response.json())
-        .then(data => {
-          console.log('Your IP address is ' + data.ip);
-        })
-        .catch(error => {
-          console.error('Error fetching IP address:', error);
-        });
-    }
-
-    // Call the function when the page loads
-    getIpAddress();
-  </script>
 
   <!---Javascript files-->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="script.js"></script>
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="sidebars.js"></script>
@@ -777,7 +768,6 @@
   <script src="api/ytapi.js"></script>
   <script src="api/ytapi.bestappsintamil.js"></script>
   <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
-
   <script src="./assets/dist/js/splidejs.js"></script>
 </body>
 
