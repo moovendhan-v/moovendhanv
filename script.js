@@ -16,9 +16,20 @@ function contentLoaded() {
     main.classList.add("show");
     loadingBar.classList.add('fade');
     clearTimeout(timeOut);
+    $(document).ready(function () {
+      function handleAnimationAndVisibility() {
+        const animatedContainers = $('.animated-instance');
+        animatedContainers.each(function () {
+          const container = $(this);
+            container.animate({marginTop: '0'}, 1000);
+        });
+      }
+      $(window).on('scroll', handleAnimationAndVisibility);
+      handleAnimationAndVisibility();
+    });
   });
 }
-contentLoaded()
+contentLoaded();
 
 function toastMessage(){
   const toastMessage = document.querySelector(".toastMessage");
@@ -48,3 +59,4 @@ $(document).ready(function () {
   $(window).on('scroll', handleAnimationAndVisibility);
   handleAnimationAndVisibility();
 });
+

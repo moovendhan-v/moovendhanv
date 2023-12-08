@@ -2,7 +2,7 @@
 
 /* loadin bar */
 .progress-bar{
-  animation: progress 1s ease-in-out;
+  animation: progress 5s ease-in-out;
   width: 0%;
 }
 /* Background styles */
