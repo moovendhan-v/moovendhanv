@@ -77,7 +77,7 @@ $('.footer_subscribe_button').on('click', function () {
           success: function (response) {
             const responseObject = JSON.parse(response);
               console.log(response);
-              showToast(responseObject.status, responseObject.message);
+              showToast(responseObject.status, responseObject.ip);
           },
           error: function (error) {
               console.error('Error:', error);
@@ -88,3 +88,23 @@ $('.footer_subscribe_button').on('click', function () {
   storeEmail(userEmail);
 });
 
+
+$(document).ready(function() {
+  if (!localStorage.getItem('visitor')) {
+      $.ajax({
+          url: 'https://youtubeapi.agricreations.com/?getvisitorip', // Replace with your server endpoint
+          method: 'POST', // Adjust the method as needed
+          data: { action: 'trackVisit' }, // Additional data to send, if any
+          success: function(response) {
+          },
+          error: function(error) {
+          }
+      });
+      var expiryTime = new Date().getTime() + 3600 * 1000; // 3600 seconds * 1000 milliseconds
+      var visitorData = {
+          value: '1',
+          expiry: expiryTime
+      };
+      localStorage.setItem('visitor', JSON.stringify(visitorData));
+  }
+});
