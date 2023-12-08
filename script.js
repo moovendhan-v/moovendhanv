@@ -60,3 +60,31 @@ $(document).ready(function () {
   handleAnimationAndVisibility();
 });
 
+function showToast(text, message){
+  new bootstrap.Toast(document.querySelector('#basicToast')).show();
+  $('.toast-heading').text(text);
+  $('.toast-message').text(message);
+}
+
+
+$('.footer_subscribe_button').on('click', function () {
+  const apiUrl = 'https://youtubeapi.agricreations.com/?email';
+  function storeEmail(email) {
+      $.ajax({
+          url: apiUrl,
+          type: 'POST', // Use 'POST' if you are sending data to the server
+          data: { email: email },
+          success: function (response) {
+            const responseObject = JSON.parse(response);
+              console.log(response);
+              showToast(responseObject.status, responseObject.message);
+          },
+          error: function (error) {
+              console.error('Error:', error);
+          }
+      });
+  }
+  const userEmail = $('.footer_subscribe_email_input_value').val();
+  storeEmail(userEmail);
+});
+

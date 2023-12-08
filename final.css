@@ -1837,6 +1837,7 @@ height: 40px;
   background-color: #5479f7;
   color: white;
   border-radius: 0px 5px 5px 0px;
+  height: 100%;
 }
 .footer_link{
   display: flex;
