@@ -314,7 +314,7 @@ position: relative;
     justify-content: center;
     background-color: #00000000;
     width: 90%;
-    height: 100%;
+    height: 120%;
     color: white;
     text-align: center;
     top: 90%;
@@ -338,6 +338,7 @@ position: relative;
     text-align: center;
     font-size: 1.00rem;
     animation: ourServiceP .5s;
+    line-height: 1.5;
 }
 .our_service_list_caption h3{
     position: absolute;

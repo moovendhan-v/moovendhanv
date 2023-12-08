@@ -31,8 +31,6 @@ function toastMessage(){
 }
 
 $(document).ready(function () {
-  let lastScrollTop = 0;
-
   function handleAnimationAndVisibility() {
     const animatedContainers = $('.animated-loading');
     animatedContainers.each(function () {
@@ -40,25 +38,13 @@ $(document).ready(function () {
       const containerTop = container.offset().top;
       const windowHeight = $(window).height();
       const scrollPosition = $(window).scrollTop();
-      // const adjustment = 100;
-      const scrollDirection = scrollPosition > lastScrollTop ? 'down' : 'up';
-
-      if (containerTop < scrollPosition + windowHeight) {
+      const adjustment = 100;
+      if (containerTop < scrollPosition + windowHeight - adjustment) {
         console.log("done");
-
-        // Adjust marginTop based on scroll direction
-        const newMarginTop = scrollDirection === 'down' ? 0 : '200px';
-
-        container.stop().animate({
-          marginTop: newMarginTop
-        }, 1000);
-      }
+        container.animate({marginTop: '0'}, 1000);
+      }  
     });
-
-    // Update lastScrollTop after processing the current scroll position
-    lastScrollTop = scrollPosition;
   }
-
   $(window).on('scroll', handleAnimationAndVisibility);
   handleAnimationAndVisibility();
 });
