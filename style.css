@@ -2,7 +2,7 @@
 
 /* loadin bar */
 .progress-bar{
-  animation: progress 1s ease-in-out;
+  animation: progress 5s ease-in-out;
   width: 0%;
 }
 /* Background styles */
@@ -26,7 +26,14 @@ body{
 .client_reviews{
   color: rgb(0, 0, 0);
   min-height: 200px;
-  background-color: rgb(255, 255, 255);
+  background-image: url('https://cdn.pixabay.com/photo/2015/05/26/23/52/technology-785742_1280.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.client_reviews_container::after{
+  background-color: black;
+  content: "";
 }
 .client_slide{
   padding: 20px;
@@ -44,6 +51,10 @@ body{
 }
 .client_col2{
   padding: 20px;
+}
+.client_review_star{
+  display: flex;
+  justify-content: center;
 }
 .whatsappIcon{
   z-index: 100;
@@ -104,14 +115,42 @@ body{
   width: 100%;
 }
 .client_review_col1{
-  width: 40%;
+  width: 30%;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(255,255,255,0.5);
+-webkit-backdrop-filter: blur(25px);
+backdrop-filter: blur(25px);
+border: 1px solid rgba(255,255,255,0.25);
 }
-client_review_col2{
-  width: 60%;
+
+.client_review_col2{
+  width: 70%;
+  background: rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255,255,255,0.25);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
 }
 .client_image img{
-  width: 10%;
+  width: 20%;
   height: auto;
+  clip-path: circle(32.32% at center center);
+}
+.client_review_captions h3{
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.5;
+}
+.client_image{
+  display: flex;
+  justify-content: center;
 }
 
 .loading_bar{

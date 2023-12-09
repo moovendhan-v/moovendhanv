@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/css/splidecss.css">
+    <link rel="stylesheet" href="final.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    
+<section id="our_service">
+    <div class="our_services">
+      <h3>OUR SERVICES</h3>
+    </div>
+
+    <div class="our_service_slide">
+      <div id="home1-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list our_service_lists">
+            <li class="splide__slide our_service_list">
+              <img
+                class="our_service_list_img"
+                src="https://images.unsplash.com/photo-1536940385103-c729049165e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt=""
+              />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+            <li class="splide__slide our_service_list">
+              <img src="https://images.unsplash.com/photo-1536940385103-c729049165e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="" />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+            <li class="splide__slide our_service_list">
+              <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="" />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+            <li class="splide__slide our_service_list">
+              <img src="https://images.unsplash.com/photo-1536940385103-c729049165e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="" />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+            <li class="splide__slide our_service_list">
+              <img src="./assets/img/product launch.png" alt="" />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+            <li class="splide__slide our_service_list">
+              <img src="https://images.unsplash.com/photo-1536940385103-c729049165e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="" />
+              <div class="our_service_list_caption">
+                <h3>SEMINARS AND CONFERENCES</h3>
+                <p>Impress clients, educate audiences, and build a stronger network with an immersive business conference.</p>
+                <img src="./next (1).png" alt="">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="our_service_readmore">
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+  <script src="./assets/dist/js/splidejs.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#home1-slider", {
+    perPage: 3,
+    type: "loop",
+    arrows: true,
+    pagination: false,
+    autoplay: false,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+      480: {
+        perPage: 1,
+      },
+    },
+  }).mount();
+});
+
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const leftArrow = document.querySelector('#home1-slider .splide__arrows .splide__arrow--prev');
+    const img = document.createElement('img');
+    img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23000000%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E";
+    leftArrow.appendChild(img);
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const rightArrow = document.querySelector('#home1-slider .splide__arrows .splide__arrow--next');
+    const img = document.createElement('img');
+    img.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20version%3D%221.2%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20300%20300%22%20width%3D%22900%22%20height%3D%22900%22%3E%0A%09%3Ctitle%3ENew%20Project%3C%2Ftitle%3E%0A%09%3Cstyle%3E%0A%09.s0%20%7B%20fill%3A%20none%3B%20stroke%3A%20%23000000%3B%20stroke-miterlimit%3A100%3B%20stroke-width%3A%205.7%20%7D%20%0A%09%3C%2Fstyle%3E%0A%09%3Cpath%20id%3D%22Shape%201%22%20class%3D%22s0%22%20d%3D%22m186.8%20300l-73.9-150%2073.9-150%22%2F%3E%0A%3C%2Fsvg%3E";
+    rightArrow.appendChild(img);
+});
+</script>
+</body>
+</html>
