@@ -106,5 +106,9 @@ $(document).ready(function() {
           expiry: expiryTime
       };
       localStorage.setItem('visitor', JSON.stringify(visitorData));
+      
+    if (visitorData && visitorData.expiry < new Date().getTime()) {
+      localStorage.removeItem('visitor');
+  }
   }
 });
