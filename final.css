@@ -1939,7 +1939,7 @@ flex-direction: column;
   margin: 0px 10px;
 }
 footer {
-  background-color: #EFEFEF;
+  /* background-color: #EFEFEF; */
   padding: 10px;
 }
 .footer_subscribe {
