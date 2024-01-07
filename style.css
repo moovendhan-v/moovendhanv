@@ -222,7 +222,9 @@ border: 1px solid rgba(255,255,255,0.25);
 }
 
 body{
-    background: #222222 !important;
+    background: black !important;
+    /* background: #222222 !important; */
+
     min-height: 100vh;
     transition: opacity 0.5s ease-in-out;
 }
