@@ -1635,7 +1635,7 @@ animation: fadeRight 2s cubic-bezier(.65,.05,.36,1);
       height: 100%;
       color: white;
       text-align: center;
-      top: 90%;
+      top: 100%;
       padding: 0.63rem;
       font-size: 1.00rem;
   }
